@@ -1,0 +1,2552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>阿里云 - 上云就上阿里云</title>
+    <link rel="icon" href="./favicon.ico">
+    <link rel="stylesheet" href="./iconfont/iconfont.css">
+    <!-- 头部轮播图 -->
+    <link rel="stylesheet" href="CSS/swiper.css">
+    <!-- 网页预加载 -->
+    <link rel="stylesheet" id="pageloader-css" href="./CSS/pageloader.css" type="text/css" media="all" />
+    <!-- Self -->
+    <link rel="stylesheet" href="./CSS/base.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <!-- 头部轮播图 -->
+    <style>
+        .swiper-container {
+            width: 100%;
+            height: 600px;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .swiper-container-vertical>.swiper-pagination-bullets {
+            top: 430px;
+            left: 0;
+        }
+        .swiper-container-vertical>.swiper-pagination-bullets .swiper-pagination-bullet {
+            display: inline-block;
+            width: 40px;
+            height: 5px;
+            border-radius: 0;
+            margin: 0 5px;
+        }
+        .swiper-pagination-bullet-active{
+            transition: 0.5s;
+            background: #fff;
+        }
+        .swiper-container{
+            width: 100%;
+        }
+        .swiper-wrapper{
+            width: 100%;
+        }
+        .swiper-slide{
+            width: 100%;
+        }
+        .swiper-slide img{
+            width: 100%;
+            height: 600px;
+            position: absolute;
+            top: 0px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--加载 -->
+    <div id="bonfire-pageloader">
+        <div class="bonfire-pageloader-icon">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                width="512px" height="512px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+                <path id="loading-12-icon" d="M291,82.219c0,16.568-13.432,30-30,30s-30-13.432-30-30s13.432-30,30-30S291,65.65,291,82.219z
+                 M261,404.781c-15.188,0-27.5,12.312-27.5,27.5s12.312,27.5,27.5,27.5s27.5-12.312,27.5-27.5S276.188,404.781,261,404.781z
+                 M361.504,113.167c-4.142,7.173-13.314,9.631-20.487,5.489c-7.173-4.141-9.631-13.313-5.49-20.487
+                c4.142-7.173,13.314-9.631,20.488-5.489C363.188,96.821,365.645,105.994,361.504,113.167z M188.484,382.851
+                c-14.348-8.284-32.697-3.368-40.98,10.98c-8.285,14.349-3.367,32.696,10.98,40.981c14.35,8.283,32.697,3.367,40.98-10.981
+                C207.75,409.482,202.834,391.135,188.484,382.851z M421.33,184.888c-8.368,4.831-19.07,1.965-23.901-6.404
+                c-4.832-8.368-1.965-19.07,6.404-23.902c8.368-4.831,19.069-1.964,23.9,6.405C432.566,169.354,429.699,180.056,421.33,184.888z
+                 M135.399,329.767c-8.285-14.35-26.633-19.266-40.982-10.982c-14.348,8.285-19.264,26.633-10.979,40.982
+                c8.284,14.348,26.632,19.264,40.981,10.98C138.767,362.462,143.683,344.114,135.399,329.767z M436.031,277.249
+                c-11.044,0-20-8.953-20-19.999c0-11.045,8.955-20.001,20.001-20.001c11.044,0,19.999,8.955,19.999,20.002
+                C456.031,268.295,447.078,277.249,436.031,277.249z M115.97,257.251c-0.001-16.57-13.433-30.001-30.001-30.002
+                c-16.568,0.001-29.999,13.432-30,30.002c0.001,16.566,13.433,29.998,30.001,30C102.538,287.249,115.969,273.817,115.97,257.251z
+                 M401.333,364.248c-10.759-6.212-14.446-19.97-8.234-30.73c6.212-10.759,19.971-14.446,30.731-8.233
+                c10.759,6.211,14.445,19.971,8.232,30.73C425.852,366.774,412.094,370.46,401.333,364.248z M135.398,184.736
+                c8.285-14.352,3.368-32.698-10.98-40.983c-14.349-8.283-32.695-3.367-40.981,10.982c-8.282,14.348-3.366,32.696,10.981,40.981
+                C108.768,204,127.115,199.082,135.398,184.736z M326.869,421.328c-6.902-11.953-2.807-27.242,9.148-34.145
+                s27.243-2.806,34.146,9.149c6.902,11.954,2.806,27.243-9.15,34.145C349.059,437.381,333.771,433.284,326.869,421.328z
+                 M188.482,131.649c14.352-8.286,19.266-26.633,10.982-40.982c-8.285-14.348-26.631-19.264-40.982-10.98
+                c-14.346,8.285-19.264,26.633-10.98,40.982C155.787,135.017,174.137,139.932,188.482,131.649z" />
+            </svg>
+        </div>
+    </div>
+    <!-- 加载 -->
+
+    <!-- 视口 -->
+    <div class="viewports">
+
+        <!-- 网页头部 -->
+        <div class="head">
+            <!-- 网页头部导航 -->
+            <div class="head-nav clearfix">
+
+                <!-- 一级导航 -->
+                <div class="head-nav-one clearfix">
+                    <div class="headNavOne-left fl">
+
+                        <!-- 左上角侧边栏 -->
+                        <div class="img fl">
+                            <img src="./images/TB17mppCFOWBuNjy0FiXXXFxVXa-36-28.png" alt="">
+                            <div class="headSidebar">
+                                <ul>
+                                    <li class="liTab clearfix">
+                                        <a href="javascript:;">
+                                            <span class="fl">阿里云计算</span>
+                                            <span class="iconfont icon-arrow-left fr"></span>
+                                        </a>
+                                    </li>
+                                    <li class="liTab taxons clearfix">
+                                        <a href="javascript:;">
+                                            <span class="fl">产品</span>
+                                            <span class="iconfont icon-arrow-left fr"></span>
+                                        </a>
+                                    </li>
+                                    <li class="liTab clearfix">
+                                        <a href="javascript:;">
+                                            <span class="fl">解决方案</span>
+                                            <span class="iconfont icon-arrow-left fr"></span>
+                                        </a>
+                                    </li>
+                                    <li class="liTab clearfix">
+                                        <a href="javascript:;">
+                                            <span class="fl">云市场</span>
+                                            <span class="iconfont icon-arrow-left fr"></span>
+                                        </a>
+                                    </li>
+                                    <li class="liTab clearfix">
+                                        <a href="javascript:;">
+                                            <span class="fl">开发者</span>
+                                            <span class="iconfont icon-arrow-left fr"></span>
+                                        </a>
+                                    </li>
+                                    <li class="liTab clearfix">
+                                        <a href="javascript:;">
+                                            <span class="fl">支持与服务</span>
+                                            <span class="iconfont icon-arrow-left fr"></span>
+                                        </a>
+                                    </li>
+                                    <li class="liTab clearfix">
+                                        <a href="javascript:;">
+                                            <span class="fl">云栖社区</span>
+                                            <span class="iconfont icon-arrow-left fr"></span>
+                                        </a>
+                                    </li>
+                                    <li class="liTab clearfix">
+                                        <a href="javascript:;">
+                                            <span class="fl">阿里云大学</span>
+                                            <span class="iconfont icon-arrow-left fr"></span>
+                                        </a>
+                                    </li>
+                                    <li class="liTab clearfix">
+                                        <a href="javascript:;">
+                                            <span class="fl">合作与生态</span>
+                                            <span class="iconfont icon-arrow-left fr"></span>
+                                        </a>
+                                    </li>
+                                    <li class="liLine"></li>
+                                    <li class="liTab liThree clearfix">
+                                        <a href="javascript:;">
+                                            <span class="fl">政府通道</span>
+                                            <span class="iconfont icon-dongtai fr"></span>
+                                        </a>
+                                    </li>
+                                    <li class="liTab liThree clearfix">
+                                        <a href="javascript:;">
+                                            <span class="fl">企业孵化</span>
+                                            <span class="iconfont icon-dongtai fr"></span>
+                                        </a>
+                                    </li>
+                                    <li class="liTab liThree clearfix">
+                                        <a href="javascript:;">
+                                            <span class="fl">联系我们</span>
+                                            <span class="iconfont icon-dongtai fr"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                    </li>
+                                </ul>
+                                <div class="sidebarBottom">售前咨询95187转1</div>
+                            </div>
+                            <div class="taxonsUls">
+                                <div class="taxonsUl">
+                                    <img src="./images/ali01.png" alt="" class="taxonsImg">
+                                </div>
+                                <ul class="taxonsUl1 taxonsUl">
+                                    <li class="taxonsUlFindLi clearfix">
+                                        <a href="javascript:;">
+                                            <span class="fl">云计算基础</span>
+                                            <span class="iconfont icon-arrow-left fr"></span>
+                                        </a>
+                                    </li>
+                                    <li class="taxonsUlFindLi clearfix">
+                                        <a href="javascript:;">
+                                            <span class="fl">安全</span>
+                                            <span class="iconfont icon-arrow-left fr"></span>
+                                        </a>
+                                    </li>
+                                    <li class="taxonsUlFindLi clearfix">
+                                        <a href="javascript:;">
+                                            <span class="fl">大数据</span>
+                                            <span class="iconfont icon-arrow-left fr"></span>
+                                        </a>
+                                    </li>
+                                    <li class="taxonsUlFindLi clearfix">
+                                        <a href="javascript:;">
+                                            <span class="fl">人工智能</span>
+                                            <span class="iconfont icon-arrow-left fr"></span>
+                                        </a>
+                                    </li>
+                                    <li class="taxonsUlFindLi clearfix">
+                                        <a href="javascript:;">
+                                            <span class="fl">企业应用</span>
+                                            <span class="iconfont icon-arrow-left fr"></span>
+                                        </a>
+                                    </li>
+                                    <li class="taxonsUlFindLi clearfix">
+                                        <a href="javascript:;">
+                                            <span class="fl">开发与运维</span>
+                                            <span class="iconfont icon-arrow-left fr"></span>
+                                        </a>
+                                    </li>
+                                    <li class="taxonsUlFindLi clearfix">
+                                        <a href="javascript:;">
+                                            <span class="fl">物联网</span>
+                                            <span class="iconfont icon-arrow-left fr"></span>
+                                        </a>
+                                    </li>
+                                    <li class="taxonsUlFindLi clearfix">
+                                        <a href="javascript:;">
+                                            <span class="fl">合作与生态</span>
+                                            <span class="iconfont icon-arrow-left fr"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="taxonsUl">
+                                    <img src="./images/ali02.png" alt="" class="taxonsImg">
+                                </div>
+                                <div class="taxonsUl">
+                                    <img src="./images/ali03.png" alt="" class="taxonsImg">
+                                </div>
+                                <div class="taxonsUl">
+                                    <img src="./images/ali04.png" alt="" class="taxonsImg">
+                                </div>
+                                <div class="taxonsUl">
+                                    <img src="./images/ali05.png" alt="" class="taxonsImg">
+                                </div>
+                                <div class="taxonsUl">
+                                    <img src="./images/ali06.png" alt="" class="taxonsImg">
+                                </div>
+                                <div class="taxonsUl">
+                                    <img src="./images/ali07.png" alt="" class="taxonsImg">
+                                </div>
+                                <div class="taxonsUl">
+                                    <img src="./images/ali08.png" alt="" class="taxonsImg">
+                                </div>
+                            </div>
+                            <div class="taxonsUlFind">
+                                <div class="taxonsUlFindItem">
+                                    <img src="./images/find1.png" alt="">
+                                </div>
+                                <div class="taxonsUlFindItem">
+                                    <img src="./images/find2.png" alt="">
+                                </div>
+                                <div class="taxonsUlFindItem">
+                                    <img src="./images/find3.png" alt="">
+                                </div>
+                                <div class="taxonsUlFindItem">
+                                    <img src="./images/find4.png" alt="">
+                                </div>
+                                <div class="taxonsUlFindItem">
+                                    <img src="./images/find5.png" alt="">
+                                </div>
+                                <div class="taxonsUlFindItem">
+                                    <img src="./images/find6.png" alt="">
+                                </div>
+                                <div class="taxonsUlFindItem">
+                                    <img src="./images/find7.png" alt="">
+                                </div>
+                                <div class="taxonsUlFindItem">
+                                    <img src="./images/find8.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="logo fl">
+                            <a href="./index.html">
+                                <img src="./images/aliyunlogo.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="headNavOne-right fr">
+                        <ul class="fr">
+                            <li>控制台</li>
+                            <li>文档</li>
+                            <li>备案</li>
+                            <li>邮箱</li>
+                            <li>登录 </li>
+                        </ul>
+                        <div class="car fr">
+                            <i class="iconfont icon-gouwuche"></i>
+                            &nbsp;购物车
+                        </div>
+                        <div class="China">
+                            <div class="language fr">中国站&nbsp;
+                                <i class="iconfont icon-icon1"></i>
+                                <i class="iconfont icon-arrow-up" style="display:none"></i>
+                            </div>
+                            <div class="language-bo">
+                                <div class="language-bot showActive">
+                                    <ul class="language-bot-ul">
+                                        <li>
+                                            <a href="jacascript:;" class="clearfix">
+                                                <span class="fl span1">中国</span>
+                                                <span class="fr span2">简体中文</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="jacascript:;" class="clearfix">
+                                                <span class="fl span1">International</span>
+                                                <span class="fr span2">English</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="jacascript:;" class="clearfix">
+                                                <span class="fl span1"></span>
+                                                <span class="fr span2">简体中文</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="jacascript:;" class="clearfix">
+                                                <span class="fl span1"></span>
+                                                <span class="fr span2">한국어</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="jacascript:;" class="clearfix">
+                                                <span class="fl span1"></span>
+                                                <span class="fr span2">繁體中文</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="jacascript:;" class="clearfix">
+                                                <span class="fl span1"></span>
+                                                <span class="fr span2">Deutsch</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="jacascript:;" class="clearfix">
+                                                <span class="fl span1"></span>
+                                                <span class="fr span2">Français</span>
+                                            </a>
+                                        </li>
+                                        <li class="transverseLine"></li>
+                                        <li>
+                                            <a href="jacascript:;" class="clearfix">
+                                                <span class="fl span1">Australia</span>
+                                                <span class="fr span2">English</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="jacascript:;" class="clearfix">
+                                                <span class="fl span1">Malaysia</span>
+                                                <span class="fr span2">English</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="jacascript:;" class="clearfix">
+                                                <span class="fl span1">Singapore</span>
+                                                <span class="fr span2">English</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="jacascript:;" class="clearfix">
+                                                <span class="fl span1">United States</span>
+                                                <span class="fr span2">English</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="jacascript:;" class="clearfix">
+                                                <span class="fl span1">中國香港</span>
+                                                <span class="fr span2">繁體中文</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="jacascript:;" class="clearfix">
+                                                <span class="fl span1">中國台灣</span>
+                                                <span class="fr span2">繁體中文</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="jacascript:;" class="clearfix">
+                                                <span class="fl span1">日本</span>
+                                                <span class="fr span2">日本語</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="headSearch fr">
+                            <!-- 搜索框 -->
+                            <input type="text" value="" placeholder="物联网" class="iconfont icon-sousuo2" id="searchBox">
+                            <div id="divs"></div>
+                            <span class="iconfont icon-sousuo2"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 二级导航 -->
+                <div class="head-nav-two clearfix">
+                    <ul class="fl">
+                        <li>
+                            <a href="./AL/activity.html">最新活动</a>
+                        </li>
+                        <li class="liItems">
+                            <a href="javascript:;">产品
+                                <div class="triangle showActive">▲</div>
+                            </a>
+                        </li>
+                        <li class="liItems">
+                            <a href="javascript:;">解决方案
+                                <div class="triangle showActive">▲</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">定价
+                                <!-- <div class="triangle showActive">▲</div> -->
+                            </a>
+                        </li>
+                        <li class="liItems">
+                            <a href="./IT大脑/brain_inx.html">ET大脑
+                                <div class="triangle showActive">▲</div>
+                            </a>
+                        </li>
+                        <li class="liItems">
+                            <a href="./韩书云阿里云/data.html">数据智能
+                                <div class="triangle showActive">▲</div>
+                            </a>
+                        </li>
+                        <li class="liItems">
+                            <a href="./李红昌-网络安全所需要图片/安全.html">安全
+                                <div class="triangle showActive">▲</div>
+                            </a>
+                        </li>
+                        <li class="liItems">
+                            <a href="./云市场/cloud_index.html">云市场
+                                <div class="triangle showActive">▲</div>
+                            </a>
+                        </li>
+                        <li class="liItems">
+                            <a href="javascript:;">支持与服务
+                                <div class="triangle showActive">▲</div>
+                            </a>
+                        </li>
+                        <li class="liItems">
+                            <a href="javascript:;">合作伙伴
+                                <div class="triangle showActive">▲</div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="register fr">免费注册</div>
+                    <div class="items showActive">
+                        <!-- 最新产品 -->
+                        <div class="items-ali" style="background:none;border-style:none;box-shadow:none"></div>
+                        <!-- 产品 -->
+                        <div class="items-ali itemsAli clearfix">
+                            <ul class="BigUl ">
+                                <li class="BigLi" style="line-height: 74px; background: #fff; color: #00b8db">精选</li>
+                                <li class="BigLi">
+                                    <div>Cloud Essentials</div>
+                                    <span style="font-size: 16px;">云计算基础</span>
+                                </li>
+                                <li class="BigLi">
+                                    <div>Security</div>
+                                    <span style="font-size: 16px;">安全</span>
+                                </li>
+                                <li class="BigLi">
+                                    <div>Data Technology</div>
+                                    <span style="font-size: 16px;">大数据</span>
+                                </li>
+                                <li class="BigLi">
+                                    <div>Artificial Intelligence</div>
+                                    <span style="font-size: 16px;">人工智能</span>
+                                </li>
+                                <li class="BigLi">
+                                    <div>Enterprise Applications</div>
+                                    <span style="font-size: 16px;">企业应用</span>
+                                </li>
+                                <li class="BigLi">
+                                    <div>loT</div>
+                                    <span style="font-size: 16px;">物联网</span>
+                                </li>
+                                <li class="BigLi">
+                                    <div>Developer Services</div>
+                                    <span style="font-size: 16px; border-bottom:none">开发与运维</span>
+                                </li>
+                            </ul>
+                            <div class="itemsAliRight">
+                                <div class="itemsAli-right">
+                                    <div class="sousuo"><span class="iconfont icon-sousuo2">&nbsp;搜索</span></div>
+                                    <div class="lieb clearfix">
+                                        <dl>
+                                            <dt class="iconfont icon-ren" style="color:aqua"><strong style="color:#000">&nbsp;热门产品</strong></dt>
+                                            <dd>云服务器 ECS</dd>
+                                            <dd>云数据库 RDS MySQL 版</dd>
+                                            <dd>对象存储 OSS</dd>
+                                            <dd>域名注册</dd>
+                                            <dd>网站建设</dd>
+                                            <dd>CDN</dd>
+                                            <dd>SSL证书</dd>
+                                            <dd>DDoS高防IP</dd>
+                                            <dd>短信服务</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt class="iconfont icon-remen1" style="color:aqua"><strong style="color:#000">近期热点</strong></dt>
+                                            <dd>Web应用防火墙</dd>
+                                            <dd>云数据库RDS SQL Server 版</dd>
+                                            <dd>智能媒体管理</dd>
+                                            <dd>图像识别</dd>
+                                            <dd>网站建设</dd>
+                                            <dd>数据库备份 DBS</dd>
+                                            <dd>SSL证书</dd>
+                                            <dd>短信服务</dd>
+                                            <dd>负载均衡 SLB</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt class="iconfont icon-fabu" style="color:aqua"><strong style="color:#000">&nbsp;最新发布</strong></dt>
+                                            <dd>弹性容器实例 ECI</dd>
+                                            <dd>云数据库 RDS MariaDB TX 版</dd>
+                                            <dd>敏感数据保护（公测中）</dd>
+                                            <dd>图像搜索</dd>
+                                            <dd>机器翻译</dd>
+                                            <dd>号码认证服务</dd>
+                                            <dt class="iconfont icon-fankui" style="color:aqua"><strong style="color:#000">&nbsp;云产品动态</strong></dt>
+                                            <dd>阿里云产品动态实时发布</dd>
+                                        </dl>
+                                    </div>
+                                    <div class="itemsAliRight-bottom clearfix">
+                                        <h2>边缘节点服务ENS 重磅升级 <i class="iconfont icon-youjiantou1"></i></h2>
+                                        <p style="color:grey">边缘节点服务，离用户更近的计算！一站式提供全区覆盖、弹性灵活、形态多样的分布式边缘计算服务，适用于通过业务、内容、服务下沉和就近处理，带来更高性能或更低成本的业务场景。</p>
+                                        <div class="btdiv clearfix">
+                                            <span class="fl">详解产品优势和场景架构<i class="iconfont icon-youjiantou1"></i></span>
+                                            <span class="fr"> 全面按量付费，一键创建海量边缘节点 <i class="iconfont icon-youjiantou1"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="itemsAli-right showActive">
+                                    <div class="sousuo"><span class="iconfont icon-sousuo2">&nbsp;搜索</span></div>
+                                    <div class="lieb clearfix">
+                                        <dl>
+                                            <dt class="iconfont icon-ren" style="color:aqua"><strong style="color:#000">&nbsp;热门产品</strong></dt>
+                                            <dd>云服务器 ECS</dd>
+                                            <dd>云数据库 RDS MySQL 版</dd>
+                                            <dd>对象存储 OSS</dd>
+                                            <dd>域名注册</dd>
+                                            <dd>网站建设</dd>
+                                            <dd>CDN</dd>
+                                            <dd>SSL证书</dd>
+                                            <dd>DDoS高防IP</dd>
+                                            <dd>短信服务</dd>
+                                            <dd>负载均衡 SLB</dd>
+                                            <dd>轻量应用服务器</dd>
+                                            <dd>块存储</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt class="iconfont icon-remen1" style="color:aqua"><strong style="color:#000">近期热点</strong></dt>
+                                            <dd>Web应用防火墙</dd>
+                                            <dd>云数据库RDS SQL Server 版</dd>
+                                            <dd>智能媒体管理</dd>
+                                            <dd>图像识别</dd>
+                                            <dd>网站建设</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt class="iconfont icon-fabu" style="color:aqua"><strong style="color:#000">&nbsp;最新发布</strong></dt>
+                                            <dd>弹性容器实例 ECI</dd>
+                                            <dd>云数据库 RDS MariaDB TX 版</dd>
+                                            <dd>敏感数据保护（公测中）</dd>
+                                            <dd>商品评价解析</dd>
+                                            <dd>语音模型自学习工具</dd>
+                                            <dd>图像搜索</dd>
+                                            <dd>机器翻译</dd>
+                                            <dd>号码认证服务</dd>
+                                            <dt class="iconfont icon-fankui" style="color:aqua"><strong style="color:#000">&nbsp;云产品动态</strong></dt>
+                                            <dd>阿里云产品动态实时发布</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                                <div class="itemsAli-right showActive">
+                                    <div class="sousuo"><span class="iconfont icon-sousuo2">&nbsp;搜索</span></div>
+                                    <div class="lieb clearfix">
+                                        <dl>
+                                            <dt class="iconfont icon-ren" style="color:aqua"><strong style="color:#000">&nbsp;热门产品</strong></dt>
+                                            <dd>云服务器 ECS</dd>
+                                            <dd>云数据库 RDS MySQL 版</dd>
+                                            <dd>对象存储 OSS</dd>
+                                            <dd>域名注册</dd>
+                                            <dd>网站建设</dd>
+                                            <dd>CDN</dd>
+                                            <dd>SSL证书</dd>
+                                            <dd>DDoS高防IP</dd>
+                                            <dd>短信服务</dd>
+                                            <dd>负载均衡 SLB</dd>
+                                            <dd>轻量应用服务器</dd>
+                                            <dd>块存储</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt class="iconfont icon-remen1" style="color:aqua"><strong style="color:#000">近期热点</strong></dt>
+                                            <dd>Web应用防火墙</dd>
+                                            <dd>云数据库RDS SQL Server 版</dd>
+                                            <!-- <dd>智能媒体管理</dd>
+                                            <dd>图像识别</dd>
+                                            <dd>网站建设</dd>
+                                            <dd>数据库备份 DBS</dd> -->
+                                            <dd>SSL证书</dd>
+                                            <dd>短信服务</dd>
+                                            <dd>负载均衡 SLB</dd>
+                                            <dd>DataV 数据可视化</dd>
+                                            <dd>边缘节点服务 ENS</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt class="iconfont icon-fabu" style="color:aqua"><strong style="color:#000">&nbsp;最新发布</strong></dt>
+                                            <dd>弹性容器实例 ECI</dd>
+                                            <dd>云数据库 RDS MariaDB TX 版</dd>
+                                            <dd>敏感数据保护（公测中）</dd>
+                                            <dd>商品评价解析</dd>
+                                            <dd>语音模型自学习工具</dd>
+                                            <dd>图像搜索</dd>
+                                            <dd>机器翻译</dd>
+                                            <dd>号码认证服务</dd>
+                                            <dt class="iconfont icon-fankui" style="color:aqua"><strong style="color:#000">&nbsp;云产品动态</strong></dt>
+                                            <dd>阿里云产品动态实时发布</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                                <div class="itemsAli-right showActive">
+                                    <div class="sousuo"><span class="iconfont icon-sousuo2">&nbsp;搜索</span></div>
+                                    <div class="lieb clearfix">
+                                        <dl>
+                                            <dt class="iconfont icon-ren" style="color:aqua"><strong style="color:#000">&nbsp;热门产品</strong></dt>
+                                            <dd>云服务器 ECS</dd>
+                                            <dd>云数据库 RDS MySQL 版</dd>
+                                            <dd>对象存储 OSS</dd>
+                                            <dd>域名注册</dd>
+                                            <dd>网站建设</dd>
+                                            <dd>CDN</dd>
+                                            <!-- <dd>SSL证书</dd>
+                                            <dd>DDoS高防IP</dd>
+                                            <dd>短信服务</dd>
+                                            <dd>负载均衡 SLB</dd>
+                                            <dd>轻量应用服务器</dd>
+                                            <dd>块存储</dd> -->
+                                        </dl>
+                                        <dl>
+                                            <dt class="iconfont icon-remen1" style="color:aqua"><strong style="color:#000">近期热点</strong></dt>
+                                            <dd>Web应用防火墙</dd>
+                                            <dd>云数据库RDS SQL Server 版</dd>
+                                            <dd>智能媒体管理</dd>
+                                            <dd>图像识别</dd>
+                                            <dd>网站建设</dd>
+                                            <dd>数据库备份 DBS</dd>
+                                            <dd>SSL证书</dd>
+                                            <dd>短信服务</dd>
+                                            <dd>负载均衡 SLB</dd>
+                                            <dd>DataV 数据可视化</dd>
+                                            <dd>边缘节点服务 ENS</dd>
+                                            <dd>图像识别</dd>
+                                            <dd>网站建设</dd>
+                                            <dd>数据库备份 DBS</dd>
+                                            <dd>SSL证书</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt class="iconfont icon-fabu" style="color:aqua"><strong style="color:#000">&nbsp;最新发布</strong></dt>
+                                            <dd>弹性容器实例 ECI</dd>
+                                            <dd>云数据库 RDS MariaDB TX 版</dd>
+                                            <dd>敏感数据保护（公测中）</dd>
+                                            <dd>商品评价解析</dd>
+                                            <dd>语音模型自学习工具</dd>
+                                            <dd>图像搜索</dd>
+                                            <dd>机器翻译</dd>
+                                            <dd>号码认证服务</dd>
+                                            <dt class="iconfont icon-fankui" style="color:aqua"><strong style="color:#000">&nbsp;云产品动态</strong></dt>
+                                            <dd>阿里云产品动态实时发布</dd>
+                                        </dl>
+                                    </div>
+                                    <div class="itemsAliRight-bottom clearfix">
+                                        <h2>边缘节点服务ENS 重磅升级 <i class="iconfont icon-youjiantou1"></i></h2>
+                                        <p style="color:grey">边缘节点服务，离用户更近的计算！一站式提供全区覆盖、弹性灵活、形态多样的分布式边缘计算服务，适用于通过业务、内容、服务下沉和就近处理，带来更高性能或更低成本的业务场景。</p>
+                                        <div class="btdiv clearfix">
+                                            <span class="fl">详解产品优势和场景架构<i class="iconfont icon-youjiantou1"></i></span>
+                                            <span class="fr"> 全面按量付费，一键创建海量边缘节点 <i class="iconfont icon-youjiantou1"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="itemsAli-right showActive">
+                                    <div class="sousuo"><span class="iconfont icon-sousuo2">&nbsp;搜索</span></div>
+                                    <div class="lieb clearfix">
+                                        <dl>
+                                            <dt class="iconfont icon-ren" style="color:aqua"><strong style="color:#000">&nbsp;热门产品</strong></dt>
+                                            <dd>云服务器 ECS</dd>
+                                            <dd>云数据库 RDS MySQL 版</dd>
+                                            <dd>对象存储 OSS</dd>
+                                            <dd>域名注册</dd>
+                                            <dd>网站建设</dd>
+                                            <dd>CDN</dd>
+                                            <dd>SSL证书</dd>
+                                            <dd>DDoS高防IP</dd>
+                                            <dd>短信服务</dd>
+                                            <dd>负载均衡 SLB</dd>
+                                            <dd>轻量应用服务器</dd>
+                                            <dd>块存储</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt class="iconfont icon-remen1" style="color:aqua"><strong style="color:#000">近期热点</strong></dt>
+                                            <dd>Web应用防火墙</dd>
+                                            <dd>云数据库RDS SQL Server 版</dd>
+                                            <dd>智能媒体管理</dd>
+                                            <dd>图像识别</dd>
+                                            <dd>网站建设</dd>
+                                            <dd>数据库备份 DBS</dd>
+                                            <dd>SSL证书</dd>
+                                            <dd>短信服务</dd>
+                                            <dd>负载均衡 SLB</dd>
+                                            <dd>DataV 数据可视化</dd>
+                                            <dd>边缘节点服务 ENS</dd>
+                                            <dd>云数据库 RDS MySQL 版</dd>
+                                            <dd>对象存储 OSS</dd>
+                                            <dd>域名注册</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt class="iconfont icon-fabu" style="color:aqua"><strong style="color:#000">&nbsp;最新发布</strong></dt>
+                                            <dd>弹性容器实例 ECI</dd>
+                                            <dd>云数据库 RDS MariaDB TX 版</dd>
+                                            <dd>敏感数据保护（公测中）</dd>
+                                            <dd>商品评价解析</dd>
+                                            <dd>语音模型自学习工具</dd>
+                                            <dd>图像搜索</dd>
+                                            <dd>机器翻译</dd>
+                                            <dd>号码认证服务</dd>
+                                            <!-- <dd>智能推荐（公测中）</dd>
+                                            <dd>云通信网络加速</dd> -->
+                                            <dt class="iconfont icon-fankui" style="color:aqua"><strong style="color:#000">&nbsp;云产品动态</strong></dt>
+                                            <dd>阿里云产品动态实时发布</dd>
+                                        </dl>
+                                    </div>
+                                    <div class="itemsAliRight-bottom clearfix">
+                                        <h2>边缘节点服务ENS 重磅升级 <i class="iconfont icon-youjiantou1"></i></h2>
+                                        <p style="color:grey">边缘节点服务，离用户更近的计算！一站式提供全区覆盖、弹性灵活、形态多样的分布式边缘计算服务，适用于通过业务、内容、服务下沉和就近处理，带来更高性能或更低成本的业务场景。</p>
+                                        <div class="btdiv clearfix">
+                                            <span class="fl">详解产品优势和场景架构<i class="iconfont icon-youjiantou1"></i></span>
+                                            <span class="fr"> 全面按量付费，一键创建海量边缘节点 <i class="iconfont icon-youjiantou1"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="itemsAli-right showActive">
+                                    <div class="sousuo"><span class="iconfont icon-sousuo2">&nbsp;搜索</span></div>
+                                    <div class="lieb clearfix">
+                                        <dl>
+                                            <dt class="iconfont icon-ren" style="color:aqua"><strong style="color:#000">&nbsp;热门产品</strong></dt>
+                                            <dd>云服务器 ECS</dd>
+                                            <dd>云数据库 RDS MySQL 版</dd>
+                                            <dd>对象存储 OSS</dd>
+                                            <dd>域名注册</dd>
+                                            <dd>网站建设</dd>
+                                            <dd>块存储</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt class="iconfont icon-remen1" style="color:aqua"><strong style="color:#000">近期热点</strong></dt>
+                                            <dd>Web应用防火墙</dd>
+                                            <!-- <dd>云数据库RDS SQL Server 版</dd> -->
+                                            <!-- <dd>智能媒体管理</dd> -->
+                                            <!-- <dd>图像识别</dd> -->
+                                            <!-- <dd>网站建设</dd> -->
+                                            <!-- <dd>数据库备份 DBS</dd> -->
+                                            <dd>SSL证书</dd>
+                                            <dd>短信服务</dd>
+                                            <dd>负载均衡 SLB</dd>
+                                            <dd>DataV 数据可视化</dd>
+                                            <dd>边缘节点服务 ENS</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt class="iconfont icon-fabu" style="color:aqua"><strong style="color:#000">&nbsp;最新发布</strong></dt>
+                                            <dd>图像搜索</dd>
+                                            <dd>机器翻译</dd>
+                                            <dd>号码认证服务</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                                <div class="itemsAli-right showActive">
+                                    <div class="sousuo"><span class="iconfont icon-sousuo2">&nbsp;搜索</span></div>
+                                    <div class="lieb clearfix">
+                                        <dl>
+                                            <dt class="iconfont icon-ren" style="color:aqua"><strong style="color:#000">&nbsp;畅销服务器</strong></dt>
+                                            <dd>云服务器 ECS</dd>
+                                            <dd>云数据库 RDS MySQL 版</dd>
+                                            <dd>对象存储 OSS</dd>
+                                            <dd>域名注册</dd>
+                                            <dd>网站建设</dd>
+                                            <dd>CDN</dd>
+                                            <dd>SSL证书</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt class="iconfont icon-remen1" style="color:aqua"><strong style="color:#000">近期热点</strong></dt>
+                                            <dd>Web应用防火墙</dd>
+                                            <dd>云数据库RDS SQL Server 版</dd>
+                                            <dd>智能媒体管理</dd>
+                                            <dd>图像识别</dd>
+                                            <dd>网站建设</dd>
+                                            <dd>数据库备份 DBS</dd>
+                                            <dd>SSL证书</dd>
+                                            <dd>短信服务</dd>
+                                            <dd>负载均衡 SLB</dd>
+                                            <dd>DataV 数据可视化</dd>
+                                            <dd>边缘节点服务 ENS</dd>
+                                            <dt class="iconfont icon-fankui" style="color:aqua"><strong style="color:#000">&nbsp;云产品动态</strong></dt>
+                                            <dd>阿里云产品动态实时发布</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt class="iconfont icon-fabu" style="color:aqua"><strong style="color:#000">&nbsp;最新发布</strong></dt>
+                                            <dd>弹性容器实例 ECI</dd>
+                                            <dd>云数据库 RDS MariaDB TX 版</dd>
+                                            <dd>敏感数据保护（公测中）</dd>
+                                            <dd>商品评价解析</dd>
+                                            <dd>语音模型自学习工具</dd>
+                                            <!-- <dd>图像搜索</dd>
+                                            <dd>机器翻译</dd> -->
+                                            <dd>号码认证服务</dd>
+                                        </dl>
+                                    </div>
+                                    <div class="itemsAliRight-bottom clearfix">
+                                        <h2>边缘节点服务ENS 重磅升级 <i class="iconfont icon-youjiantou1"></i></h2>
+                                        <p style="color:grey">边缘节点服务，离用户更近的计算！一站式提供全区覆盖、弹性灵活、形态多样的分布式边缘计算服务，适用于通过业务、内容、服务下沉和就近处理，带来更高性能或更低成本的业务场景。</p>
+                                        <div class="btdiv clearfix">
+                                            <span class="fl">详解产品优势和场景架构<i class="iconfont icon-youjiantou1"></i></span>
+                                            <span class="fr"> 全面按量付费，一键创建海量边缘节点 <i class="iconfont icon-youjiantou1"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="itemsAli-right showActive">
+                                    <div class="sousuo"><span class="iconfont icon-sousuo2">&nbsp;搜索</span></div>
+                                    <div class="lieb clearfix">
+                                        <dl>
+                                            <dt class="iconfont icon-ren" style="color:aqua"><strong style="color:#000">&nbsp;热门产品</strong></dt>
+                                            <dd>云服务器 ECS</dd>
+                                            <dd>云数据库 RDS MySQL 版</dd>
+                                            <dd>对象存储 OSS</dd>
+                                            <dd>域名注册</dd>
+                                            <dd>网站建设</dd>
+                                            <dd>CDN</dd>
+                                            <dd>SSL证书</dd>
+                                            <dd>DDoS高防IP</dd>
+                                            <dd>短信服务</dd>
+                                            <dd>负载均衡 SLB</dd>
+                                            <dd>轻量应用服务器</dd>
+                                            <dd>块存储</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt class="iconfont icon-remen1" style="color:aqua"><strong style="color:#000">近期热点</strong></dt>
+                                            <dd>Web应用防火墙</dd>
+                                            <dd>云数据库RDS SQL Server 版</dd>
+                                            <dd>智能媒体管理</dd>
+                                            <dd>图像识别</dd>
+                                            <dd>网站建设</dd>
+                                            <dd>数据库备份 DBS</dd>
+                                            <dd>SSL证书</dd>
+                                            <dd>短信服务</dd>
+                                            <dd>负载均衡 SLB</dd>
+                                            <dd>DataV 数据可视化</dd>
+                                            <dd>边缘节点服务 ENS</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt class="iconfont icon-fabu" style="color:aqua"><strong style="color:#000">&nbsp;最新发布</strong></dt>
+                                            <dd>弹性容器实例 ECI</dd>
+                                            <dd>云数据库 RDS MariaDB TX 版</dd>
+                                            <dd>敏感数据保护（公测中）</dd>
+                                            <dd>商品评价解析</dd>
+                                            <dd>语音模型自学习工具</dd>
+                                            <dd>图像搜索</dd>
+                                            <dd>机器翻译</dd>
+                                            <dd>号码认证服务</dd>
+                                            <dt class="iconfont icon-fankui" style="color:aqua"><strong style="color:#000">&nbsp;云产品动态</strong></dt>
+                                            <dd>阿里云产品动态实时发布</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 解决方案 -->
+                        <div class="items-ali">
+                            <ul class="BigUl">
+                                <li class="BigLi">
+                                    <div class="BigUl-title"><strong>通用解决方案</strong></div>
+                                    <ul>
+                                        <li>网站</li>
+                                        <li>IPv6 <strong style="color:orangered">NEW</strong></li>
+                                        <li>企业互联网架构</li>
+                                        <li>网络</li>
+                                        <li>云存储</li>
+                                        <li>迁移</li>
+                                        <li>区块链 <strong style="color:orangered">HOT</strong></li>
+                                        <li>SAP 云</li>
+                                        <li>VMware 云 <strong style="color:orangered">NEW</strong></li>
+                                        <li>智能客服</li>
+                                        <li>AIOps故障管理</li>
+                                        <li>企业效能</li>
+                                        <li>容器服务深度学习</li>
+                                        <li>数据传输</li>
+                                        <li>数据库灾备</li>
+                                        <li>企业级分布式数据库 <strong style="color:orangered">NEW</strong></li>
+                                        <li>可信数字内容版权服务 <strong style="color:orangered">NEW</strong></li>
+                                        <li>移动研发平台</li>
+                                        <li>钉钉小程序</li>
+                                        <li>短视频 <strong style="color:orangered">NEW</strong></li>
+                                    </ul>
+                                </li>
+                                <li class="BigLi">
+                                    <div class="BigUl-title"><strong>行业解决方案</strong></div>
+                                    <ul>
+                                        <li>新零售 <strong style="color:orangered">HOT</strong></li>
+                                        <li>新金融</li>
+                                        <li>新制造</li>
+                                        <li>新能源</li>
+                                        <li>新技术</li>
+                                        <li>智能工业</li>
+                                        <li>大游戏</li>
+                                        <li>大视频</li>
+                                        <li>大传媒</li>
+                                        <li>大健康</li>
+                                        <li>大政务 <strong style="color:orangered">HOT</strong></li>
+                                        <li>体育</li>
+                                        <li>交通物流</li>
+                                        <li>教育</li>
+                                        <li>房地产</li>
+                                        <li>汽车</li>
+                                    </ul>
+                                </li>
+                                <li class="BigLi">
+                                    <div class="BigUl-title"><strong>安全解决方案</strong></div>
+                                    <ul>
+                                        <li>等保合规安全</li>
+                                        <li>新零售安全</li>
+                                        <li>政务云安全</li>
+                                        <li>互联网金融安全</li>
+                                        <li>游戏安全</li>
+                                        <li>社交/媒体spam</li>
+                                        <li>混合云态势感知</li>
+                                    </ul>
+                                </li>
+                                <li class="BigLi">
+                                    <div class="BigUl-title"><strong>大数据解决方案</strong></div>
+                                    <ul>
+                                        <li>智慧场馆 <strong style="color:orangered">NEW</strong></li>
+                                        <li>智能设备搜索</li>
+                                        <li>大数据仓库</li>
+                                        <li>云上数据集成</li>
+                                        <li>台风路径分析</li>
+                                        <li>工业大数据服务</li>
+                                        <li>企业数据服务</li>
+                                        <li>智能旅游</li>
+                                        <li>手机数据</li>
+                                        <li>VR应用开发</li>
+                                    </ul>
+                                </li>
+                                <li class="BigLi"></li>
+                            </ul>
+                        </div>
+                        <!-- 定价 -->
+                        <div class="items-ali" style="background:none;border-style:none;box-shadow:none"></div>
+                        <!-- ET大脑 -->
+                        <div class="items-ali">
+                            <ul class="BigUl">
+                                <li class="BigLi">
+                                    <div class="BigUl-title"><strong>ET大脑</strong></div>
+                                    <ul>
+                                        <li>ET城市大脑</li>
+                                        <li>ET工业大脑<strong style="color:orangered">NEW</strong></li>
+                                        <li>ET农业大脑</li>
+                                        <li>ET环境大脑</li>
+                                        <li>ET医疗大脑</li>
+                                        <li>ET航空大脑</li>
+                                    </ul>
+                                </li>
+                                <li class="BigLi">
+                                    <div class="BigUl-title"><strong>工业智能解决方案</strong></div>
+                                    <ul>
+                                        <li>化工行业解决方案</li>
+                                        <li>光伏行业解决方案 <strong style="color:orangered">HOT</strong></li>
+                                        <li>电力行业解决方案</li>
+                                        <li>钢铁行业解决方案</li>
+                                        <li>水泥行业解决方案</li>
+                                        <li>供应链智能</li>
+                                        <li>设备故障诊断</li>
+                                        <li>设备数字运维 <strong style="color:orangered">HOT</strong></li>
+                                        <li>图像自动外检</li>
+                                        <li>工艺参数优化</li>
+                                        <li>"见远"视觉智能诊断</li>
+                                        <li>工业大数据服务</li>
+                                        <li>智能配送调度</li>
+                                        <li>设备检修智能 <strong style="color:orangered">NEW</strong></li>
+                                        <li>机床设备智能管理 <strong style="color:orangered">NEW</strong></li>
+                                        <li>锅炉燃烧优化 <strong style="color:orangered">NEW</strong></li>
+                                    </ul>
+                                </li>
+                                <li class="BigLi">
+                                    <div class="BigUl-title"><strong>城市智能解决方案</strong></div>
+                                    <ul>
+                                        <li>城市交通态势评价</li>
+                                        <li>特种车辆优化通行</li>
+                                        <li>大规模网格AI信号优化</li>
+                                    </ul>
+                                </li>
+                                <li class="BigLi">
+                                    <div class="BigUl-title"><strong>金融智能解决方案</strong></div>
+                                    <ul>
+                                        <li>智能培训</li>
+                                        <li>智能双录</li>
+                                        <li>智能助手</li>
+                                        <li>金融精准营销 <strong style="color:orangered">NEW</strong></li>
+                                    </ul>
+                                </li>
+                                <li class="BigLi">
+                                    <div class="BigUl-title"><strong>通用智能解决方案</strong></div>
+                                    <ul>
+                                        <li>游戏大数据</li>
+                                        <li>智能旅游</li>
+                                        <li>大数据线索优化</li>
+                                        <li>智能设备搜索</li>
+                                        <li>智慧场馆</li>
+                                        <li>刷脸认证服务</li>
+                                        <li>门禁/闸机人脸识别</li>
+                                        <li>个性化推荐 <strong style="color:orangered">NEW</strong></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 数据智能 -->
+                        <div class="items-ali">
+                            <ul class="BigUl">
+                                <li class="BigLi">
+                                    <div class="BigUl-title"><strong>智能语音交互</strong></div>
+                                    <ul>
+                                        <li>录音文件识别</li>
+                                        <li>实时语音转写</li>
+                                        <li>一句话识别</li>
+                                        <li>语音模型自学习工具 <strong style="color:orangered">NEW</strong></li>
+                                        <li>语音合成</li>
+                                        <li>语音合成声音定制 <strong style="color:orangered">NEW</strong></li>
+                                        <li><strong>大数据计算</strong></li>
+                                        <li>MaxCompute(原ODPS)</li>
+                                        <li>E-MapReduce</li>
+                                        <li>实时计算</li>
+                                        <li>分析数据库</li>
+                                        <li>Data Lake Analytics</li>
+                                        <li><strong>数据可视化</strong></li>
+                                        <li>DataV数据可视化 <strong style="color:orangered">NEW</strong></li>
+                                    </ul>
+                                </li>
+                                <li class="BigLi">
+                                    <div class="BigUl-title"><strong>印刷文字识别</strong></div>
+                                    <ul>
+                                        <li>通用型卡证类</li>
+                                        <li>汽车相关识别</li>
+                                        <li>行业票据识别 <strong style="color:orangered">HOT</strong></li>
+                                        <li>资产类识别</li>
+                                        <li>通用文字识别</li>
+                                        <li>视频类文字识别</li>
+                                        <li>行业文档类识别</li>
+                                        <li>大自定义模板识别 <strong style="color:orangered">NEW</strong></li>
+                                        <li>Opensearch开放搜索</li>
+                                        <li>日志服务</li>
+                                        <li>Elastic search HOT <strong style="color:orangered">HOT</strong></li>
+                                        <li>关系网络分析</li>
+                                        <li>QuickBI</li>
+
+                                    </ul>
+                                </li>
+                                <li class="BigLi">
+                                    <div class="BigUl-title"><strong>自然语言处理</strong></div>
+                                    <ul>
+                                        <li>多语言分词</li>
+                                        <li>词性标注</li>
+                                        <li>命名实体</li>
+                                        <li>情感分析</li>
+                                        <li>中心词提取</li>
+                                        <li>智能文本分类</li>
+                                        <li>文本信息抽取</li>
+                                        <li>商品评价解析</li>
+                                        <li>
+                                            <strong>大数据开发</strong>
+                                        </li>
+                                        <li>DataWorks (公测中) <strong style="color:orangered">NEW</strong></li>
+                                        <li>Dataphin(公测中)</li>
+                                        <li>数据集成</li>
+                                    </ul>
+                                </li>
+                                <li class="BigLi">
+                                    <div class="BigUl-title"><strong>内容安全</strong></div>
+                                    <ul>
+                                        <li>图像鉴黄</li>
+                                        <li>图片涉政暴恐识别</li>
+                                        <li>图片Logo商标检测</li>
+                                        <li>图片垃圾广告识别</li>
+                                        <li>图片不良场景识别</li>
+                                        <li>图片风险人物识别</li>
+                                        <li>语音垃圾识别</li>
+                                        <li>文本反垃圾识别</li>
+                                        <li>视频风险内容识别</li>
+                                        <li><strong>内容安全</strong></li>
+                                        <li>企业图谱</li>
+                                        <li>智能推荐（公测中） <strong style="color:orangered">NEW</strong>></li>
+                                    </ul>
+                                </li>
+                                <li class="BigLi">
+                                    <div class="BigUl-title"><strong>人脸识别</strong></div>
+                                    <ul>
+                                        <li>人脸识别</li>
+                                        <li><strong>图像识别</strong></li>
+                                        <li>图像识别</li>
+                                        <li><strong>机器翻译</strong></li>
+                                        <li>机器翻译(公测中) <strong style="color:orangered">NEW</strong></li>
+                                        <li><strong>图像搜索</strong></li>
+                                        <li>图像搜索 <strong style="color:orangered">NEW</strong></li>
+                                        <li><strong>机器学习平台</strong></li>
+                                        <li>机器学习平台 PAI <strong style="color:orangered">HOT</strong></li>
+                                        <li>人工智能众包(公测中) <strong style="color:orangered">NEW</strong></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 安全 -->
+                        <div class="items-ali">
+                            <ul class="BigUl">
+                                <li class="BigLi">
+                                    <div class="BigUl-title"><strong>基础安全</strong></div>
+                                    <ul>
+                                        <li>DDoS高防IP</li>
+                                        <li>Web应用防火墙<strong style="color:orangered">HOT</strong></li>
+                                        <li>安骑士</li>
+                                        <li>态势感知</li>
+                                        <li>堡垒机</li>
+                                        <li>云防火墙</li>
+                                        <li>网站威胁扫描系统</li>
+                                        <li>操作审计()公测中</li>
+                                    </ul>
+                                </li>
+                                <li class="BigLi">
+                                    <div class="BigUl-title"><strong>数据安全</strong></div>
+                                    <ul>
+                                        <li>SSL 证书</li>
+                                        <li>加密服务</li>
+                                        <li>数据库审计</li>
+                                        <li>密钥管理服务</li>
+                                        <li>敏感数据保护(公测中) <strong style="color:orangered">NEW</strong></li>
+                                        <li><strong>身份管理</strong>></li>
+                                        <li>访问控制</li>
+                                    </ul>
+                                </li>
+                                <li class="BigLi">
+                                    <div class="BigUl-title"><strong>业务安全</strong></div>
+                                    <ul>
+                                        <li>游戏盾</li>
+                                        <li>内容安全</li>
+                                        <li>实人认证</li>
+                                        <li>风险识别</li>
+                                        <li>爬虫风险管理 <strong style="color:orangered">NEW</strong></li>
+                                    </ul>
+                                </li>
+                                <li class="BigLi">
+                                    <div class="BigUl-title"><strong>安全服务</strong></div>
+                                    <ul>
+                                        <li>安全管家</li>
+                                        <li>渗透测试</li>
+                                        <li>安全众测</li>
+                                        <li>等保咨询 <strong style="color:orangered">NEW</strong></li>
+                                        <li>应急响应</li>
+                                        <li>漏洞扫描服务</li>
+                                        <li>安全培训</li>
+                                        <li>安全评估</li>
+                                        <li>代码审计</li>
+                                        <li>安全加固</li>
+                                        <li>安全通告服务</li>
+                                        <li>PCI DSS 合规咨询 <strong style="color:orangered">NEW</strong></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 云市场 -->
+                        <div class="items-ali">
+                            <ul class="BigUl">
+                                <li class="BigLi">
+                                    <div class="BigUl-title"><strong>心选商城</strong></div>
+                                    <ul>
+                                        <li>网站</li>
+                                        <li>IPv6 <strong style="color:orangered">NEW</strong></li>
+                                        <li>企业互联网架构</li>
+                                        <li>网络</li>
+                                        <li>云存储</li>
+                                        <li>迁移</li>
+                                        <li>区块链 <strong style="color:orangered">HOT</strong></li>
+                                        <li>SAP 云</li>
+                                        <li>VMware 云 <strong style="color:orangered">NEW</strong></li>
+                                        <li>智能客服</li>
+                                        <li>AIOps故障管理</li>
+                                        <li>企业效能</li>
+                                        <li>容器服务深度学习</li>
+                                        <li>数据传输</li>
+                                        <li>数据库灾备</li>
+                                        <li>企业级分布式数据库 <strong style="color:orangered">NEW</strong></li>
+                                        <li>可信数字内容版权服务 <strong style="color:orangered">NEW</strong></li>
+                                        <li>移动研发平台</li>
+                                        <li>钉钉小程序</li>
+                                        <li>短视频 <strong style="color:orangered">NEW</strong></li>
+                                    </ul>
+                                </li>
+                                <li class="BigLi">
+                                    <div class="BigUl-title"><strong>行业解决方案</strong></div>
+                                    <ul>
+                                        <li>新零售 <strong style="color:orangered">HOT</strong></li>
+                                        <li>新金融</li>
+                                        <li>新制造</li>
+                                        <li>新能源</li>
+                                        <li>新技术</li>
+                                        <li>智能工业</li>
+                                        <li>大游戏</li>
+                                        <li>大视频</li>
+                                        <li>大传媒</li>
+                                        <li>大健康</li>
+                                        <li>大政务 <strong style="color:orangered">HOT</strong></li>
+                                        <li>体育</li>
+                                        <li>交通物流</li>
+                                        <li>教育</li>
+                                        <li>房地产</li>
+                                        <li>汽车</li>
+                                    </ul>
+                                </li>
+                                <li class="BigLi">
+                                    <div class="BigUl-title"><strong>安全解决方案</strong></div>
+                                    <ul>
+                                        <li>等保合规安全</li>
+                                        <li>新零售安全</li>
+                                        <li>政务云安全</li>
+                                        <li>互联网金融安全</li>
+                                        <li>游戏安全</li>
+                                        <li>社交/媒体spam</li>
+                                        <li>混合云态势感知</li>
+                                    </ul>
+                                </li>
+                                <li class="BigLi">
+                                    <div class="BigUl-title"><strong>大数据解决方案</strong></div>
+                                    <ul>
+                                        <li>智慧场馆 <strong style="color:orangered">NEW</strong></li>
+                                        <li>智能设备搜索</li>
+                                        <li>大数据仓库</li>
+                                        <li>云上数据集成</li>
+                                        <li>台风路径分析</li>
+                                        <li>工业大数据服务</li>
+                                        <li>企业数据服务</li>
+                                        <li>智能旅游</li>
+                                        <li>手机数据</li>
+                                        <li>VR应用开发</li>
+                                    </ul>
+                                </li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <!-- 支持与服务 -->
+                        <div class="items-ali">
+                            <ul class="BigUl">
+                                <li class="BigLi">
+                                    <div class="BigUl-title"><strong>通用解决方案</strong></div>
+                                    <ul>
+                                        <li>网站</li>
+                                        <li>IPv6 <strong style="color:orangered">NEW</strong></li>
+                                        <li>企业互联网架构</li>
+                                        <li>网络</li>
+                                        <li>云存储</li>
+                                        <li>迁移</li>
+                                        <li>区块链 <strong style="color:orangered">HOT</strong></li>
+                                        <li>SAP 云</li>
+                                        <li>VMware 云 <strong style="color:orangered">NEW</strong></li>
+                                        <li>智能客服</li>
+                                        <li>AIOps故障管理</li>
+                                        <li>企业效能</li>
+                                        <li>容器服务深度学习</li>
+                                        <li>数据传输</li>
+                                        <li>数据库灾备</li>
+                                        <li>企业级分布式数据库 <strong style="color:orangered">NEW</strong></li>
+                                        <li>可信数字内容版权服务 <strong style="color:orangered">NEW</strong></li>
+                                        <li>移动研发平台</li>
+                                        <li>钉钉小程序</li>
+                                        <li>短视频 <strong style="color:orangered">NEW</strong></li>
+                                    </ul>
+                                </li>
+                                <li class="BigLi">
+                                    <div class="BigUl-title"><strong>行业解决方案</strong></div>
+                                    <ul>
+                                        <li>新零售 <strong style="color:orangered">HOT</strong></li>
+                                        <li>新金融</li>
+                                        <li>新制造</li>
+                                        <li>新能源</li>
+                                        <li>新技术</li>
+                                        <li>智能工业</li>
+                                        <li>大游戏</li>
+                                        <li>大视频</li>
+                                        <li>大传媒</li>
+                                        <li>大健康</li>
+                                        <li>大政务 <strong style="color:orangered">HOT</strong></li>
+                                        <li>体育</li>
+                                        <li>交通物流</li>
+                                        <li>教育</li>
+                                        <li>房地产</li>
+                                        <li>汽车</li>
+                                    </ul>
+                                </li>
+                                <li class="BigLi">
+                                    <div class="BigUl-title"><strong>安全解决方案</strong></div>
+                                    <ul>
+                                        <li>等保合规安全</li>
+                                        <li>新零售安全</li>
+                                        <li>政务云安全</li>
+                                        <li>互联网金融安全</li>
+                                        <li>游戏安全</li>
+                                        <li>社交/媒体spam</li>
+                                        <li>混合云态势感知</li>
+                                    </ul>
+                                </li>
+                                <li class="BigLi">
+                                    <div class="BigUl-title"><strong>大数据解决方案</strong></div>
+                                    <ul>
+                                        <li>智慧场馆 <strong style="color:orangered">NEW</strong></li>
+                                        <li>智能设备搜索</li>
+                                        <li>大数据仓库</li>
+                                        <li>云上数据集成</li>
+                                        <li>台风路径分析</li>
+                                        <li>工业大数据服务</li>
+                                        <li>企业数据服务</li>
+                                        <li>智能旅游</li>
+                                        <li>手机数据</li>
+                                        <li>VR应用开发</li>
+                                    </ul>
+                                </li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <!-- 合作伙伴 -->
+                        <div class="items-ali">
+                            <ul class="BigUl">
+                                <li class="BigLi">
+                                    <div class="BigUl-title"><strong>通用解决方案</strong></div>
+                                    <ul>
+                                        <li>网站</li>
+                                        <li>IPv6 <strong style="color:orangered">NEW</strong></li>
+                                        <li>企业互联网架构</li>
+                                        <li>网络</li>
+                                        <li>云存储</li>
+                                        <li>迁移</li>
+                                        <li>区块链 <strong style="color:orangered">HOT</strong></li>
+                                        <li>SAP 云</li>
+                                        <li>VMware 云 <strong style="color:orangered">NEW</strong></li>
+                                        <li>智能客服</li>
+                                        <li>AIOps故障管理</li>
+                                        <li>企业效能</li>
+                                        <li>容器服务深度学习</li>
+                                        <li>数据传输</li>
+                                        <li>数据库灾备</li>
+                                        <li>企业级分布式数据库 <strong style="color:orangered">NEW</strong></li>
+                                        <li>可信数字内容版权服务 <strong style="color:orangered">NEW</strong></li>
+                                        <li>移动研发平台</li>
+                                        <li>钉钉小程序</li>
+                                        <li>短视频 <strong style="color:orangered">NEW</strong></li>
+                                    </ul>
+                                </li>
+                                <li class="BigLi">
+                                    <div class="BigUl-title"><strong>行业解决方案</strong></div>
+                                    <ul>
+                                        <li>新零售 <strong style="color:orangered">HOT</strong></li>
+                                        <li>新金融</li>
+                                        <li>新制造</li>
+                                        <li>新能源</li>
+                                        <li>新技术</li>
+                                        <li>智能工业</li>
+                                        <li>大游戏</li>
+                                        <li>大视频</li>
+                                        <li>大传媒</li>
+                                        <li>大健康</li>
+                                        <li>大政务 <strong style="color:orangered">HOT</strong></li>
+                                        <li>体育</li>
+                                        <li>交通物流</li>
+                                        <li>教育</li>
+                                        <li>房地产</li>
+                                        <li>汽车</li>
+                                    </ul>
+                                </li>
+                                <li class="BigLi">
+                                    <div class="BigUl-title"><strong>安全解决方案</strong></div>
+                                    <ul>
+                                        <li>等保合规安全</li>
+                                        <li>新零售安全</li>
+                                        <li>政务云安全</li>
+                                        <li>互联网金融安全</li>
+                                        <li>游戏安全</li>
+                                        <li>社交/媒体spam</li>
+                                        <li>混合云态势感知</li>
+                                    </ul>
+                                </li>
+                                <li class="BigLi">
+                                    <div class="BigUl-title"><strong>大数据解决方案</strong></div>
+                                    <ul>
+                                        <li>智慧场馆 <strong style="color:orangered">NEW</strong></li>
+                                        <li>智能设备搜索</li>
+                                        <li>大数据仓库</li>
+                                        <li>云上数据集成</li>
+                                        <li>台风路径分析</li>
+                                        <li>工业大数据服务</li>
+                                        <li>企业数据服务</li>
+                                        <li>智能旅游</li>
+                                        <li>手机数据</li>
+                                        <li>VR应用开发</li>
+                                    </ul>
+                                </li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- 轮播项 -->
+            <div class="slideshow">
+                <div class="swiper-container clearfix">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./images/lunbo/lunbo6.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/lunbo/lunbo7.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/lunbo/lunbo3.jpg" alt="">
+                            <img src="./images/lunbo/lubo3.2.png" alt="" class="imgHu">
+                            <div class="describe">
+                                <h1>数据分析利器Quick BI</h1>
+                                <p>数据填报功能全新上线，报表第三方嵌入数量扩充</p>
+                                <div class="btn iconfont">了解更多&nbsp;&#xe619;</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/lunbo/lunbo4.jpg" alt="">
+                            <img src="./images/lunbo/lunbo4.2.png" alt="" class="imgHu">
+                            <div class="describe">
+                                <h1>阿里云 lOT 助理远程养老科技</h1>
+                                <p>浙江卫视《智造将来》重磅来袭</p>
+                                <div class="btn iconfont">了解更多&nbsp;&#xe619;</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/lunbo/lunbo5.jpg" alt="">
+                            <img src="./images/lunbo/lunbo5.2.png" alt="" class="imgHu">
+                            <div class="describe">
+                                <h1>语音识别自学习工具全新发布</h1>
+                                <p>打造专属于你的个性化ASR自学习模型</p>
+                                <div class="btn iconfont">了解更多&nbsp;&#xe619;</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 如果需要分页器 -->
+                    <div class="swiper-pagination"></div>
+
+                </div>
+
+                <!-- ul 推荐列表 -->
+                <div class="list-box-row clearfix">
+                    <div class="w">
+                        <ul>
+                            <li>
+                                <h3>免费套餐</h3>
+                                <p>30+款云产品免费试用，为您提供0门槛上云实践机会</p>
+                            </li>
+                            <li>
+                                <h3>云服务器特惠</h3>
+                                <p>限时5折，降低采购和运维成本，助理中小企业成长</p>
+                            </li>
+                            <li>
+                                <h3>Cloud Toolkit 全新升级</h3>
+                                <p>支持RDS数据库，在本地IDE中无切换地执行SQL</p>
+                            </li>
+                            <li>
+                                <h3>物联网平台</h3>
+                                <p>支持主流协议，设备上云安全便捷</p>
+                            </li>
+                            <li>
+                                <h3>发表公益宣言</h3>
+                                <p>用技术赋能公益，为社会带来更多美好的改变</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- 网页主体 -->
+        <div class="main">
+
+            <div class="w">
+                <div class="Olympic">
+                    <div class="Olympic-img">
+                        <img src="./images/TB1EGNRRVXXXXazXVXXXXXXXXXX-271-123.png" alt="">
+                    </div>
+                    <div class="introduce">
+                        <h2>全球领先、安全、稳定的云计算产品</h2>
+                        <p><a href="javascript:;">计算、存储、网络、安全、大数据、人工智能、普惠科技助您飞跃发展</a></p>
+                    </div>
+                </div>
+
+                <!-- 主体部分列表 -->
+                <div class="list">
+                    <ul class="clearfix">
+                        <li>
+                            <a href="javascript:;">
+                                <div class="ali-product-icon">
+                                    <img src="./images/TB1fk0RQVXXXXajXVXXXXXXXXXX-160-160.png" alt="">
+                                </div>
+                                <div>弹性计算</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="ali-product-icon">
+                                    <img src="./images/TB1oCR6QVXXXXXXXFXXXXXXXXXX-160-160.png" alt="">
+                                </div>
+                                <div>存储和CDN</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="ali-product-icon">
+                                    <img src="./images/TB1kZRHQVXXXXX.aXXXXXXXXXXX-160-160.png" alt="">
+                                </div>
+                                <div>数据库</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="ali-product-icon">
+                                    <img src="./images/wl.png" alt="">
+                                </div>
+                                <div>网络</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="ali-product-icon">
+                                    <img src="./images/TB1Qr4RQVXXXXbvXVXXXXXXXXXX-160-160.png" alt="">
+                                </div>
+                                <div>域名与网站</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="ali-product-icon">
+                                    <img src="./images/TB1EnOXQVXXXXcUXpXXXXXXXXXX-160-160.png" alt="">
+                                </div>
+                                <div>安全</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="ali-product-icon">
+                                    <img src="./images/TB1txh6QVXXXXaVXFXXXXXXXXXX-160-160.png" alt="">
+                                </div>
+                                <div>人工智能 ET</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="ali-product-icon">
+                                    <img src="./images/TB1XYlAQVXXXXc1aXXXXXXXXXXX-160-160.png" alt="">
+                                </div>
+                                <div>大数据基础服务</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="ali-product-icon">
+                                    <img src="./images/TB15q1mQVXXXXc6XXXXXXXXXXXX-160-160.png" alt="">
+                                </div>
+                                <div>大数据应用</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="ali-product-icon">
+                                    <img src="./images/TB1JomaQVXXXXaMXFXXXXXXXXXX-160-160.png" alt="">
+                                </div>
+                                <div>大数据分析及展现</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="ali-product-icon">
+                                    <img src="./images/TB1ylFIQVXXXXXSaXXXXXXXXXXX-160-160.png" alt="">
+                                </div>
+                                <div>分析和搜索</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="ali-product-icon">
+                                    <img src="./images/TB1FmxFQVXXXXbjaXXXXXXXXXXX-160-160.png" alt="">
+                                </div>
+                                <div>云通信</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="ali-product-icon">
+                                    <img src="./images/TB1xQKXQVXXXXcKXpXXXXXXXXXX-160-160.png" alt="">
+                                </div>
+                                <div>应用服务</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="ali-product-icon">
+                                    <img src="./images/TB1OalFQVXXXXaIaXXXXXXXXXXX-160-160.png" alt="">
+                                </div>
+                                <div>移动云</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="ali-product-icon">
+                                    <img src="./images/TB12iJnQVXXXXaoXVXXXXXXXXXX-160-160.png" alt="">
+                                </div>
+                                <div>视频服务</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="ali-product-icon">
+                                    <img src="./images/TB1zCFIQVXXXXcKXVXXXXXXXXXX-160-160.png" alt="">
+                                </div>
+                                <div>管理与监控</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="ali-product-icon">
+                                    <img src="./images/TB1GBxKQVXXXXXTaXXXXXXXXXXX-160-160.png" alt="">
+                                </div>
+                                <div>中间件</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="ali-product-icon">
+                                    <img src="./images/TB1HFw4SFXXXXctaXXXXXXXXXXX-160-160.png" alt="">
+                                </div>
+                                <div>物联网</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="ali-product-icon">
+                                    <img src="./images/TB1NACtQVXXXXXlXpXXXXXXXXXX-160-160.png" alt="">
+                                </div>
+                                <div>专有云</div>
+                            </a>
+                        </li>
+                    </ul>
+                    <span id="packUp">收起</span>
+                </div>
+            </div>
+
+        </div>
+        <!-- 主体部分通栏轮播图 -->
+        <div class="solution">
+            <ul class="clearfix">
+                <li>
+                    <div class="bg">
+                        <img src="./images/lunbo/TB1C8gpLXXXXXaWXpXXXXXXXXXX-576-840.jpg" alt="">
+                    </div>
+                    <div class="forecolors">
+                        <div class="forecolor">
+                            <img src="./images/tl1.png" alt="" class="imgImg">
+                            <div class="icons iconfont icon-hengxian"></div>
+                            <h4>医疗解决方案</h4>
+                            <div class="forecolor-active">
+                                <p>根据网站不同发展阶段，为网站类用户提供最佳上云方案，有效降低运维难度和整体IT成本</p>
+                                <span>查看详情</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="bg">
+                        <img src="./images/lunbo/TB1dDT4LXXXXXabaXXXXXXXXXXX-576-840.jpg" alt="">
+                    </div>
+                    <div class="forecolors">
+                        <div class="forecolor">
+                            <img src="./images/tonglan0.2.png" alt="" class="imgImg">
+                            <div class="icons iconfont icon-hengxian"></div>
+                            <h4>电商解决方案</h4>
+                            <div class="forecolor-active">
+                                <p>根据网站不同发展阶段，为网站类用户提供最佳上云方案，有效降低运维难度和整体IT成本</p>
+                                <span>查看详情</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="bg">
+                        <img src="./images/lunbo/TB1erQpLXXXXXa7XpXXXXXXXXXX-576-840.jpg" alt="">
+                    </div>
+                    <div class="forecolors">
+                        <div class="forecolor">
+                            <img src="./images/tonglan1.2.png" alt="" class="imgImg">
+                            <div class="icons iconfont icon-hengxian"></div>
+                            <h4>APP解决方案</h4>
+                            <div class="forecolor-active">
+                                <p>根据网站不同发展阶段，为网站类用户提供最佳上云方案，有效降低运维难度和整体IT成本</p>
+                                <span>查看详情</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="bg">
+                        <img src="./images/lunbo/TB1PVwkLXXXXXagXFXXXXXXXXXX-576-840.jpg" alt="">
+                    </div>
+                    <div class="forecolors">
+                        <div class="forecolor">
+                            <img src="./images/tonglan3.2.png" alt="" class="imgImg">
+                            <div class="icons iconfont icon-hengxian"></div>
+                            <h4>游戏解决方案</h4>
+                            <div class="forecolor-active active">
+                                <p>根据网站不同发展阶段，为网站类用户提供最佳上云方案，有效降低运维难度和整体IT成本</p>
+                                <span>查看详情</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="bg">
+                        <img src="./images/lunbo/TB1RJ_8LXXXXXX9aXXXXXXXXXXX-576-840.jpg" alt="">
+                    </div>
+                    <!-- 轮播项 -->
+                    <div class="forecolors">
+                        <div class="forecolor">
+                            <img src="./images/tonglan4.2.png" alt="" class="imgImg">
+                            <div class="icons iconfont icon-hengxian"></div>
+                            <h4>网站解决方案</h4>
+                            <div class="forecolor-active">
+                                <p>根据网站不同发展阶段，为网站类用户提供最佳上云方案，有效降低运维难度和整体IT成本</p>
+                                <span>查看详情</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="bg">
+                        <img src="./images/lunbo/TB1VqEvLXXXXXb2XXXXXXXXXXXX-576-840.jpg" alt="">
+                    </div>
+                    <!-- 轮播项 -->
+                    <div class="forecolors">
+                        <div class="forecolor">
+                            <img src="./images/tonglan5.2.png" alt="" class="imgImg">
+                            <div class="icons iconfont icon-hengxian"></div>
+                            <h4>音视频解决方案</h4>
+                            <div class="forecolor-active">
+                                <p>根据网站不同发展阶段，为网站类用户提供最佳上云方案，有效降低运维难度和整体IT成本</p>
+                                <span>查看详情</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="bg">
+                        <img src="./images/lunbo/TB1WMouLXXXXXciXXXXXXXXXXXX-576-840.jpg" alt="">
+                    </div>
+                    <!-- 轮播项 -->
+                    <div class="forecolors">
+                        <div class="forecolor">
+                            <img src="./images/tonglan6.2.png" alt="" class="imgImg">
+                            <div class="icons iconfont icon-hengxian"></div>
+                            <h4>金融解决方案</h4>
+                            <div class="forecolor-active">
+                                <p>根据网站不同发展阶段，为网站类用户提供最佳上云方案，有效降低运维难度和整体IT成本</p>
+                                <span>查看详情</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="bg">
+                        <img src="./images/lunbo/TB1xmb3LXXXXXbXaXXXXXXXXXXX-576-840.jpg" alt="">
+                    </div>
+                    <!-- 轮播项 -->
+                    <div class="forecolors">
+                        <div class="forecolor">
+                            <img src="./images/tonglan7.2.png" alt="" class="imgImg">
+                            <div class="icons iconfont icon-hengxian"></div>
+                            <h4>渲染解决方案</h4>
+                            <div class="forecolor-active">
+                                <p>根据网站不同发展阶段，为网站类用户提供最佳上云方案，有效降低运维难度和整体IT成本</p>
+                                <span>查看详情</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="bg">
+                        <img src="./images/lunbo/TB16hkwLXXXXXX6XXXXXXXXXXXX-576-840.jpg" alt="">
+                    </div>
+                    <!-- 轮播项 -->
+                    <div class="forecolors">
+                        <div class="forecolor">
+                            <img src="./images/tonglan8.2.png" alt="" class="imgImg">
+                            <div class="icons iconfont icon-hengxian"></div>
+                            <h4>O2O解决方案</h4>
+                            <div class="forecolor-active">
+                                <p>根据网站不同发展阶段，为网站类用户提供最佳上云方案，有效降低运维难度和整体IT成本</p>
+                                <span>查看详情</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="bg">
+                        <img src="./images/lunbo/TB1ty_YLXXXXXX4apXXXXXXXXXX-576-840.jpg" alt="">
+                    </div>
+                    <!-- 轮播项 -->
+                    <div class="forecolors">
+                        <div class="forecolor">
+                            <img src="./images/tonglan9.2.png" alt="" class="imgImg">
+                            <div class="icons iconfont icon-hengxian"></div>
+                            <h4>政务解决方案</h4>
+                            <div class="forecolor-active">
+                                <p>根据网站不同发展阶段，为网站类用户提供最佳上云方案，有效降低运维难度和整体IT成本</p>
+                                <span>查看详情</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="bg">
+                        <img src="./images/lunbo/TB19Jz6LXXXXXacaXXXXXXXXXXX-576-840.jpg" alt="">
+                    </div>
+                    <!-- 轮播项 -->
+                    <div class="forecolors">
+                        <div class="forecolor">
+                            <img src="./images/tonglan10.2.png" alt="" class="imgImg">
+                            <div class="icons iconfont icon-hengxian"></div>
+                            <h4>物联网解决方案</h4>
+                            <div class="forecolor-active">
+                                <p>根据网站不同发展阶段，为网站类用户提供最佳上云方案，有效降低运维难度和整体IT成本</p>
+                                <span>查看详情</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <!-- 左右按钮 -->
+            <div class="list-prev iconfont icon-zuo"></div>
+            <div class="list-next iconfont icon-arrow-left"></div>
+        </div>
+
+        <!-- 海纳百川，精选全球的高品质软件与服务
+        开发者工具、建站、API、企业应用，支撑云端应用服务  -->
+        <div class="serve">
+            <div class="w">
+                <div class="headline">
+                    <h3>海纳百川，精选全球的高品质软件与服务</h3>
+                    <p><a href="javascript:;">开发者工具、建站、API、企业应用，支撑云端应用服务</a></p>
+                </div>
+
+                <!-- 服务列表 -->
+                <div class="classificationOfService">
+                    <ul class="clearfix">
+                        <li>
+                            <div class="classificationOfService-children">
+                                <a href="javascript:;" class="as slide-market-20">
+                                </a>
+                                <h2>基础软件</h2>
+                            </div>
+                            <ul class="uls clearfix">
+                                <li>预装PHP&nbsp;|&nbsp;预装ASP/.NET&nbsp;|&nbsp;预装JAVA</li>
+                                <li>预装建站系统&nbsp;|&nbsp;服务器软件&nbsp;|&nbsp;应用开发工具</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="classificationOfService-children">
+                                <a href="javascript:;" class="as slide-market-20">
+                                </a>
+                                <h2>网站建设</h2>
+                            </div>
+                            <ul class="uls clearfix">
+                                <li>&nbsp;网站模板|&nbsp;企业官网&nbsp;|电子商务&nbsp;</li>
+                                <li>定制化服务&nbsp;| 推广与营销&nbsp;|&nbsp;手机网站&nbsp;</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="classificationOfService-children">
+                                <a href="javascript:;" class="as slide-market-20">
+                                </a>
+                                <h2>服务与培训</h2>
+                            </div>
+                            <ul class="uls clearfix">
+                                <li>故障排查&nbsp;|&nbsp;数据迁移&nbsp;|&nbsp;环境配置</li>
+                                <li>云培训与认证&nbsp;|&nbsp;木马病毒查杀&nbsp;|&nbsp;专线接入</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="classificationOfService-children">
+                                <a href="javascript:;" class="as slide-market-20">
+                                </a>
+                                <h2>企业应用</h2>
+                            </div>
+                            <ul class="uls clearfix">
+                                <li>视频直播&nbsp;|&nbsp;销售管理&nbsp;|&nbsp;企业服务</li>
+                                <li>协同办公&nbsp;|&nbsp;人事管理&nbsp;|&nbsp;财富管理</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="classificationOfService-children">
+                                <a href="javascript:;" class="as slide-market-20">
+                                </a>
+                                <h2>安全市场</h2>
+                            </div>
+                            <ul class="uls clearfix">
+                                <li>网络安全&nbsp;|&nbsp;主机安全&nbsp;|&nbsp;应用安全</li>
+                                <li>数据安全&nbsp;|&nbsp;安全管理&nbsp;|&nbsp;安全服务</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="classificationOfService-children">
+                                <a href="javascript:;" class="as slide-market-20">
+                                </a>
+                                <h2>API市场</h2>
+                            </div>
+                            <ul class="uls clearfix">
+                                <li>API服务&nbsp;|&nbsp;电子商务&nbsp;|&nbsp;金融理财</li>
+                                <li>企业管理&nbsp;|&nbsp;交通地理&nbsp;|&nbsp;气象水利</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 论坛 -->
+        <div class="forum">
+            <div class="w">
+                <div class="sketch clearfix">
+                    <h2>大咖云集，知识分享的开发者技术社区</h2>
+                    <p>实战干货、在线直播、专家问答、技术论坛，学习、成长、分享、共建</p>
+                </div>
+
+                <ul class="clearfix">
+                    <li>
+                        <div class="liBox">
+                            <div class="ali">
+                                <img src="./images/TB1qEbTGwHqK1RjSZJnXXbNLpXa-760-460.jpg" alt="">
+                            </div>
+                            <div class="generalize">
+                                <p>【推广】阿里云新品发布会</p>
+                            </div>
+                        </div>
+                        <p class="ps">【汇总】阿里开发者技术交流钉钉群的全向图</p>
+                        <p class="ps">【干货】一次MySQL两千万数据的大表优化解决过程</p>
+                    </li>
+                    <li>
+                        <div class="liBox">
+                            <div class="ali">
+                                <img src="./images/TB18oELxhjaK1RjSZFAXXbdLFXa-760-460.jpg" alt="">
+                            </div>
+                            <div class="generalize">
+                                <p>【聚能聊】盘点2018数据泄露，数据权限放还是不放</p>
+                            </div>
+                        </div>
+                        <p class="ps">【聚能聊】“全栈工程师”已经过时了？</p>
+                        <p class="ps">【聚能聊】阿里云新品发布会，重磅上线！</p>
+                    </li>
+                    <li>
+                        <div class="liBox">
+                            <div class="ali">
+                                <img src="./images/TB1d5UyxXzqK1RjSZFoXXbfcXXa-760-460.jpg" alt="">
+                            </div>
+                            <div class="generalize">
+                                <p>【直播】阿里云总监课正式启航！</p>
+                            </div>
+                        </div>
+                        <p class="ps">【直播】容器化架构下的混沌工程实践</p>
+                        <p class="ps">【直播】阿里云新品发布会第47期：数据管理DMS升级</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 通栏计数抵御攻击次数 -->
+        <div class="attack">
+            <!-- 数据 -->
+            <div class="Resist">阿里云，今天为全国40%的网站防御了<span id="ResistTheAttack">9,433,922,905</span>次攻击</div>
+            <img src="./images/lunbo/huawen.png" alt="">
+        </div>
+
+        <!-- 地图部分 -->
+        <div class="ali-main-serve">
+            <div class="w">
+                <div class="ali-main-head">
+                    <div class="biaoti">遍布全球，持续扩张的数据中心让跨域体验更流畅</div>
+                    <p><a href="./动态地图/Dynamic_map.html">无论是硅谷核心区，还是迪拜贸易枢纽区，全球无缝覆盖，提供CN2高速网络，BGP接入支持</a></p>
+                </div>
+
+                <!-- 地图 -->
+                <div class="map">
+                    <div class="map-service-right">
+                        <div class="china-map">
+                            <div class="region-list postition-1">
+                                <div class="area-box">
+                                    <span class="dot"></span>
+                                    <span class="pulse delay-01"></span>
+                                    <span class="pulse delay-02"></span>
+                                    <div class="show-regin"><span>美西</span></div>
+                                </div>
+                            </div>
+                            <div class="region-list postition-2 online-node">
+                                <div class="area-box"><span class="dot"></span><span class="pulse delay-06"></span>
+                                    <span class="pulse delay-05"></span>
+                                    <span class="pulse delay-04"></span></div>
+                                <div class="show-regin"><span>美东</span></div>
+                            </div>
+                            <div class="region-list postition-3">
+                                <div class="area-box"><span class="dot"></span><span class="pulse delay-01"></span>
+                                    <span class="pulse delay-02"></span>
+                                    <div class="show-regin"><span>英国</span></div>
+                                </div>
+                            </div>
+                            <div class="region-list waite postition-4 waite-node">
+                                <div class="area-box"><span class="dot"></span><span class="pulse delay-01"></span>
+                                    <span class="pulse delay-02"></span>
+                                </div>
+                                <div class="show-regin"><span>德国</span></div>
+                            </div>
+                            <div class="region-list waite postition-5 waite-node">
+                                <div class="area-box"><span class="dot"></span><span class="pulse delay-01"></span>
+                                    <span class="pulse delay-02"></span>
+                                </div>
+                                <div class="show-regin"><span>中东</span></div>
+                            </div>
+                            <div class="region-list postition-6 online-node">
+                                <div class="area-box"><span class="dot"></span><span class="pulse delay-06"></span>
+                                    <span class="pulse delay-05"></span>
+                                    <span class="pulse delay-04"></span></div>
+                                <div class="show-regin"><span>印度</span></div>
+                            </div>
+                            <div class="region-list postition-13 online-node">
+                                <div class="area-box"><span class="dot"></span><span class="pulse delay-04"></span>
+                                    <span class="pulse delay-05"></span>
+                                    <span class="pulse delay-03"></span></div>
+                                <div class="show-regin"><span>华北</span></div>
+                            </div>
+                            <div class="region-list postition-11 online-node">
+                                <div class="area-box"><span class="dot"></span><span class="pulse delay-06"></span>
+                                    <span class="pulse delay-05"></span>
+                                    <span class="pulse delay-04"></span></div>
+                                <div class="show-regin"><span>华东</span></div>
+                            </div>
+                            <div class="region-list  postition-7 online-node">
+                                <div class="area-box"><span class="dot"></span><span class="pulse delay-10"></span>
+                                    <span class="pulse delay-09"></span>
+                                    <span class="pulse delay-08"></span></div>
+                                <div class="show-regin"><span>华南</span></div>
+                            </div>
+                            <div class="region-list postition-8 online-node">
+                                <div class="area-box"><span class="dot"></span><span class="pulse delay-06"></span>
+                                    <span class="pulse delay-05"></span>
+                                    <span class="pulse delay-04"></span></span></div>
+                                <div class="show-regin"><span>香港</span></div>
+                            </div>
+                            <div class="region-list  postition-9 online-node">
+                                <div class="area-box"><span class="dot"></span><span class="pulse delay-10"></span>
+                                    <span class="pulse delay-09"></span>
+                                    <span class="pulse delay-08"></span></div>
+                                <div class="show-regin"><span>马来西亚</span></div>
+                            </div>
+                            <div class="region-list  postition-10 online-node">
+                                <div class="area-box"><span class="dot"></span><span class="pulse delay-06"></span>
+                                    <span class="pulse delay-05"></span>
+                                    <span class="pulse delay-04"></span></div>
+                                <div class="show-regin"><span>新加坡</span></div>
+                            </div>
+                            <div class="region-list  postition-15 online-node">
+                                <div class="area-box"><span class="dot"></span><span class="pulse delay-06"></span>
+                                    <span class="pulse delay-05"></span>
+                                    <span class="pulse delay-04"></span></div>
+                                <div class="show-regin"><span>印尼</span></div>
+                            </div>
+                            <div class="region-list  postition-14 online-node">
+                                <div class="area-box"><span class="dot"></span><span class="pulse delay-06"></span>
+                                    <span class="pulse delay-05"></span>
+                                    <span class="pulse delay-04"></span></div>
+                                <div class="show-regin"><span>澳大利亚</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="authentication">
+                    <ul class="clearfix">
+                        <li>
+                            <img src="./images/TB17fLGLXXXXXazXpXXXXXXXXXX-116-116.png" alt="">
+                            <span>全球首张云安全国际认证</span>
+                        </li>
+                        <li>
+                            <img src="./images/TB1aaDCLXXXXXXwXFXXXXXXXXXX-116-116.png" alt="">
+                            <span>信息安全管理体系国际认证</span>
+                        </li>
+                        <li>
+                            <img src="./images/TB1vDvLLXXXXXbrXXXXXXXXXXXX-116-116.png" alt="">
+                            <span>通过公安部等级保护评测</span>
+                        </li>
+                        <li>
+                            <img src="./images/TB1UNzkLXXXXXa1aXXXXXXXXXXX-116-116.png" alt="">
+                            <span>首批可信云服务认证</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="ali-main-bottom">
+                    <div class="biaotiBottom">携手共赢，与全球合作伙伴共建云端生态</div>
+                    <p>加入阿里云生态合作伙伴计划，开创新业务，获取技术、资源，实现更快速成长</p>
+                </div>
+                <div class="manufacturer">
+                    <ul class="clearfix">
+                        <li>
+                            <img src="./images/TB1GRbJLXXXXXcEXXXXXXXXXXXX-480-260.png" alt="">
+                        </li>
+                        <li>
+                            <img src="./images/TB1S6_dLXXXXXa0aXXXXXXXXXXX-480-260.png" alt="">
+                        </li>
+                        <li>
+                            <img src="./images/TB1BErILXXXXXXmXpXXXXXXXXXX-480-260.png" alt="">
+                        </li>
+                        <li>
+                            <img src="./images/TB1MqHgLXXXXXaIapXXXXXXXXXX-480-260.png" alt="">
+                        </li>
+                        <li>
+                            <img src="./images/TB1eFzgLXXXXXacaXXXXXXXXXXX-480-260.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 底部通栏推销背景图 -->
+        <div class="gets">
+            <div class="getResist">40+ 云产品免费使用，为您提供0门槛上云实践机会！</div>
+            <span>立即领取</span>
+            <img src="./images/lunbo/huawen.png" alt="">
+        </div>
+
+
+        <!-- 网页底部 -->
+        <footer>
+            <div class="w">
+                <div class="footers clearfix">
+                    <div class="footers-left fl">
+                        <div class="consult iconfont icon-zixun fl"></div>
+                        <ul class="fl">
+                            <li>
+                                <a href="javascript:;" style="font-size:20px">售前咨询热线</a>
+                            </li>
+                            <li>
+                                <h2>
+                                    <a href="javascript:;" style="color:#ccc">95187转1</a>
+                                </h2>
+                            </li>
+                            <li class="lia">
+                                <a href="javascript:;">专业技术咨询</a>
+                            </li>
+                            <li class="lia">
+                                <a href="javascript:;">全方位产品解读</a>
+                            </li>
+                            <li class="lia">
+                                <a href="javascript:;">成熟解决方案</a>
+                            </li>
+                            <li class="lia">
+                                <a href="javascript:;">成功客户案例分享</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footers-right fl">
+                        <dl>
+                            <dt>
+                                <a href="javascript:;">支持与服务</a>
+                            </dt>
+                            <dd>
+                                <a href="javascript:;">联系我们</a>
+                            </dd>
+                            <dd>
+                                <a href="javascript:;">支持计划</a>
+                            </dd>
+                            <dd>
+                                <a href="javascript:;">新手学堂</a>
+                            </dd>
+                            <dd>
+                                <a href="javascript:;">自助工具</a>
+                            </dd>
+                            <dd>
+                                <a href="javascript:;">咨询与设计</a>
+                            </dd>
+                            <dd>
+                                <a href="javascript:;">迁移与部署</a>
+                            </dd>
+                            <dd>
+                                <a href="javascript:;">运维与管理</a>
+                            </dd>
+                            <dd>
+                                <a href="javascript:;">优化与提升</a>
+                            </dd>
+                            <dd>
+                                <a href="javascript:;">公告</a>
+                            </dd>
+                            <dd>
+                                <a href="javascript:;">提交建议</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <a href="javascript:;">账户管理</a>
+                            </dt>
+                            <dd>
+                                <a href="javascript:;">管理控制台</a>
+                            </dd>
+                            <dd>
+                                <a href="javascript:;">备案管理</a>
+                            </dd>
+                            <dd>
+                                <a href="javascript:;">域名控制台</a>
+                            </dd>
+                            <dd>
+                                <a href="javascript:;">万网主机控制面板</a>
+                            </dd>
+                            <dd>
+                                <a href="javascript:;">账号管理</a>
+                            </dd>
+                            <dd>
+                                <a href="javascript:;">充值付款</a>
+                            </dd>
+                            <dd>
+                                <a href="javascript:;">线下汇款 / 电汇</a>
+                            </dd>
+                            <dd>
+                                <a href="javascript:;">合同申请</a>
+                            </dd>
+                            <dd>
+                                <a href="javascript:;">索取发票</a>
+                            </dd>
+                            <dd>
+                                <a href="javascript:;">合规性</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <a href="javascript:;">快速入口</a>
+                            </dt>
+                            <dd>
+                                <a href="javascript:;">域名信息查询(WHOIS)</a>
+                            </dd>
+                            <dd>
+                                <a href="javascript:;">定价</a>
+                            </dd>
+                            <dd>
+                                <a href="javascript:;">云产品快报</a>
+                            </dd>
+                            <dd>
+                                <a href="javascript:;">海外上云</a>
+                            </dd>
+                            <dd>
+                                <a href="javascript:;">客户案例</a>
+                            </dd>
+                            <dd>
+                                <a href="javascript:;">分析师报告</a>
+                            </dd>
+                            <dd>
+                                <a href="javascript:;">阿里云授权服务中心</a>
+                            </dd>
+                            <dd>
+                                <a href="javascript:;">举报中心</a>
+                            </dd>
+                            <dd>
+                                <a href="javascript:;">信任中心</a>
+                            </dd>
+                            <dd>
+                                <a href="javascript:;">产品图标</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <a href="javascript:;">资源和社区</a>
+                            </dt>
+                            <dd>
+                                <a href="javascript:;">帮助文档</a>
+                            </dd>
+                            <dd>
+                                <a href="javascript:;">开发者中心</a>
+                            </dd>
+                            <dd>
+                                <a href="javascript:;">阿里云大学</a>
+                            </dd>
+                            <dd>
+                                <a href="javascript:;">开发者课堂</a>
+                            </dd>
+                            <dd>
+                                <a href="javascript:;">考试认证</a>
+                            </dd>
+                            <dd>
+                                <a href="javascript:;">在线工作坊</a>
+                            </dd>
+                            <dd>
+                                <a href="javascript:;">云栖大会</a>
+                            </dd>
+                            <dd>
+                                <a href="javascript:;">云栖社区</a>
+                            </dd>
+                            <dd>
+                                <a href="javascript:;">码上公益</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <a href="javascript:;">关注阿里云</a>
+                            </dt>
+                            <dd>
+                                <a href="javascript:;">企业决策必读</a>
+                            </dd>
+                            <dd>
+                                <a href="javascript:;">阿里云APP</a>
+                            </dd>
+                            <dd>
+                                <img src="./images/TB1WP9YGh9YBuNjy0FfXXXIsVXa-512-512.png" alt="">
+                            </dd>
+                            <dd>
+                                <a href="javascript:;">阿里云微信</a>
+                            </dd>
+                            <dd>
+                                <a href="javascript:;">阿里云微博</a>
+                            </dd>
+                            <dd>
+                                <a href="javascript:;">阿里云客户满意中心</a>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+
+                <div class="related">
+                    <div class="related-one clearfix">
+                        <h4 class="fl">热门产品</h4>
+                        <ul class="fl">
+                            <li>免费套餐</li>
+                            <li>云数据库</li>
+                            <li>RDS云存储</li>
+                            <li>OSSNAT网关</li>
+                            <li>负载均衡</li>
+                            <li>域名注册</li>
+                            <li>网站建设</li>
+                            <li>大数据</li>
+                            <li>云计算</li>
+                        </ul>
+                    </div>
+                    <div class="related-one clearfix">
+                        <h4 class="fl">用户热搜</h4>
+                        <ul class="fl">
+                            <li>网站备案</li>
+                            <li>网安法</li>
+                            <li>CDN加速</li>
+                            <li>API网关</li>
+                            <li>企业邮箱</li>
+                            <li>whois查询</li>
+                            <li>视频直播</li>
+                            <li>视频转码</li>
+                            <li>云安全</li>
+                        </ul>
+                    </div>
+                    <div class="related-one clearfix">
+                        <h4 class="fl">更多推荐</h4>
+                        <ul class="fl">
+                            <li>数据科研社区</li>
+                            <li>阿里云大学</li>
+                            <li>学生机</li>
+                            <li>IT论坛</li>
+                            <li>数据可视化</li>
+                            <li>云虚机</li>
+                            <li>com域名</li>
+                            <li>cn域名</li>
+                            <li>合规安全解决方案</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="policy">
+                    <ul>
+                        <li>关于我们</li>
+                        <li>法律声明及隐私权政策</li>
+                        <li>廉正举报</li>
+                        <li>联系我们</li>
+                        <li>加入阿里云</li>
+                    </ul>
+                </div>
+
+                <div class="Youshang">
+                    <ul class="clearfix">
+                        <li>阿里巴巴集团</li>
+                        <li>淘宝网</li>
+                        <li>天猫</li>
+                        <li>聚划算</li>
+                        <li>全球速卖通</li>
+                        <li>阿里巴巴国际交易市场</li>
+                        <li>1688</li>
+                        <li>阿里妈妈</li>
+                        <li>飞猪</li>
+                        <li>阿里云计算</li>
+                        <li>AliOS</li>
+                        <li>阿里通信</li>
+                        <li>万网</li>
+                        <li>高德</li>
+                        <li>UC</li>
+                        <li>友盟</li>
+                        <li>虾米</li>
+                        <li>优酷</li>
+                        <li>钉钉</li>
+                        <li>支付宝</li>
+                        <li>达摩院</li>
+                    </ul>
+                </div>
+
+                <div class="copyright">
+                    <p>© 2009-2019 Aliyun.com 版权所有 ICP证：浙B2-20080101</p>
+                    <div class="publicSecurity clearfix">
+                        <img src="./images/TB1GxwdSXXXXXa.gif" alt="">
+                        <img src="./images/TB1_003.png" alt="">
+                        <p class="iconfont ">浙公网安备 33010002000099号</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <!-- 咨询建议 -->
+        <div class="suggest">
+            <div class="consu">
+                <img src="./images/TB1ebBInxrI8KJjy0FpXXb5hVXa-56-38.png" alt="" class="consuImg">
+                <div class="suggest-zi">咨询·建议</div>
+            </div>
+
+            <ul class="showActive">
+                <li>
+                    <img src="./images/TB1_002.png" alt="" class="fl">
+                    <div class="fl">
+                        <p>售前咨询电话</p>
+                        <span style="color:orange">95187转1</span>
+                    </div>
+                    <div class="closes fr">
+                        <img src="./images/TB16TmMRpXXXXclXXXXXXXXXXXX-28-28.png" alt="">
+                    </div>
+                </li>
+                <li>
+                    <img src="./images/TB1lJtARFXXXXapapXXXXXXXXXX-48-50.png" alt="" class="fl">
+                    <div class="fl">
+                        <p>智能顾问</p>
+                        <span style="font-size:12px;color:grey">智能诊断，秒级解答</span>
+                    </div>
+                </li>
+                <li>
+                    <img src="./images/TB1GZydRFXXXXcIXXXXXXXXXXXX-48-50.png" alt="" class="fl">
+                    <div class="fl">
+                        <p>建议反馈</p>
+                        <span style="font-size:12px;color:grey">阿里云不是完美的，我们渴望你的建议</span>
+                    </div>
+                </li>
+
+
+            </ul>
+        </div>
+
+        <!-- 回到顶部 -->
+        <div class="top iconfont icon-huidingbu showActive"></div>
+    </div>
+
+
+    <script src="./js/jquery.js" type="text/javascript"></script>
+    <!-- 通栏轮播图 -->
+    <script src="./lib/jquery-1.12.4.js"></script>
+    <!-- 回到顶部 and 二级导航 tab切换 -->
+    <script src="./js/SmallFeatures.js"></script>
+
+    <script src="./js/lunbo.js"></script>
+
+
+
+    <!-- 预加载 -->
+    <script src="js/pageloader.js" type="text/javascript"></script>
+    <!-- BEGIN PLACE LOADING ICON IN THE MIDDLE OF THE PAGE -->
+    <script>
+        jQuery(window).resize(function () {
+            resizenow();
+        });
+
+        function resizenow() {
+            var browserwidth = jQuery(window).width();
+            var browserheight = jQuery(window).height();
+            jQuery('.bonfire-pageloader-icon').css('right', ((browserwidth - jQuery(".bonfire-pageloader-icon").width()) /
+                2)).css('top', ((browserheight - jQuery(".bonfire-pageloader-icon").height()) / 2));
+        };
+        resizenow();
+    </script>
+
+    <!-- 头部轮播图 -->
+    <script src="./lib/swiper.js"></script>
+
+    <!-- 头部轮播项 -->
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            direction: 'vertical', // 垂直切换选项
+            loop: true, // 循环模式选项
+
+            // 如果需要分页器
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            speed: 500,
+            autoplay: {
+                delay: 2000,
+                stopOnLastSlide: false,
+                disableOnInteraction: false,
+                // waitForTransition: false,
+            },
+
+        })
+    </script>
+</body>
+
+</html>

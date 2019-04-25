@@ -1,0 +1,153 @@
+body,
+ul,
+ol,
+dl,
+dd,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+form {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 14px arial, 'microsoft yahei';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+
+i,
+em {
+  font-style: normal;
+}
+
+.f12 {
+  font-size: 12px;
+}
+
+.f14 {
+  font-size: 14px;
+}
+
+.f16 {
+  font-size: 16px;
+}
+
+.f18 {
+  font-size: 18px;
+}
+
+.f20 {
+  font-size: 20px;
+}
+
+.blue {
+  color: #00a4ff;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  // text-decoration: none;
+  color: #050505;
+}
+a:hover{
+  color: #00c1de;
+}
+
+.link {
+  border: 1px solid #00b4ff;
+  text-align: center;
+}
+
+img {
+  /*清除ie6浏览器默认图片边框*/
+  border: 0 none;
+  /*清除图片底部的缝隙*/
+  vertical-align: middle;
+}
+
+input,
+textarea {
+  border: 0 none;
+  outline: 0;
+}
+
+/*设置版心*/
+.w {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+.leaveout {
+  /*normal 默认值  | nowrap 强制一行显示*/
+  white-space: nowrap;
+  /*溢出隐藏*/
+  overflow: hidden;
+  /*clip 默认值 没有省略号  |  ellipsis 省略号*/
+  text-overflow: ellipsis;
+  /*想实现省略号，white-space: nowrap; overflow: hidden; text-overflow: ellipsis;必须同时使用，才能实现*/
+}
+
+.leaveouts {
+  /* 设置超出部分的显示方式 */
+  overflow: hidden;
+  /* 在文字末尾换行 */
+  word-break: break-all;
+  /* 文字溢出显示省略号 */
+  text-overflow: ellipsis;
+  /* 用来控制显示行数 */
+  -webkit-line-clamp: 2;
+  /* 文字显示方式,默认水平 */
+  -webkit-box-orient: vertical;
+  /* 将盒子转为弹性盒子 */
+  display: -webkit-box;
+}
+/*三角形*/
+.introduce:after {
+  content: "";
+  display: block;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent #fff transparent;
+  position: absolute;
+  left: 30px;
+  top: -20px;
+}

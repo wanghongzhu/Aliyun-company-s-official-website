@@ -1,0 +1,313 @@
+body {
+    color: #fff;
+    background: #000;
+    overflow-x: hidden;
+}
+
+.bjnav {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    background-color: #000;
+    /* padding-left: 80px; */
+    margin: 0 auto;
+}
+
+.bjaly{
+    float: left;
+}
+
+.bjaly img {
+    width: 50%
+}
+
+.bjnacr>li {
+    font-weight: 700;
+    height: 80px;
+    padding-left: 40px;
+}
+.bjnacr>li a{
+    display: block;
+    color: #fff;
+}
+
+.bjli {
+    /* display:inline-block;
+    width: 50px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border: 1px solid #fff; */
+}
+
+.bjbanner {
+    position: relative;
+}
+
+.bjbanner .bjbp2 img {
+    display: block;
+    width: 45%;
+    position: absolute;
+    top: 200px;
+    left: 80px;
+}
+
+.bjbanner .bjbp3 img {
+    display: block;
+    width: 7%;
+    position: absolute;
+    top: 470px;
+    left: 80px;
+}
+
+.bannerhz {
+    position: absolute;
+    top: 470px;
+    left: 200px;
+}
+
+.bannerhz .gang {
+    height: 38px;
+    width: 2px;
+    color: #fff;
+    border-left: 2px solid #fff;
+}
+
+.bannerhz .ganghz {
+    margin-left: 30px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.yc {
+    margin-top: 100px;
+}
+
+.yc1 {
+    margin-bottom: 10px;
+}
+
+.yc .yc1>img {
+    display: block;
+    width: 25%;
+}
+
+.yc .yc1>span {
+    border: 1px solid #fff;
+    padding: 4px 15px;
+}
+
+.yc .yc1>span:hover {
+    background-color: dodgerblue;
+    border-color: dodgerblue;
+}
+
+.yc2 {
+    border-bottom: 2px solid #fff;
+}
+
+.yc2>p {
+    font-size: 20px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+.bjnr>li {
+    float: left;
+    padding-top: 43px;
+    padding-bottom: 30px;
+}
+
+.bjtime>p {
+    font-size: 16px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.bjnr .bjzt {
+    width: 470px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.bjnr .bjname {
+    width: 140px;
+    font-size: 16px;
+}
+
+.bjnr .bjzw {
+    color: #969696;
+    font-size: 16px;
+}
+
+.bjnr {
+    width: 1200px;
+    border-bottom: 1px solid #202427;
+}
+
+.cyellow {
+    width: 100%;
+}
+
+.cyellow img {
+    width: 100%;
+}
+
+/* 大户嘉宾 */
+
+.jb .jbul {
+    margin-top: 100px;
+}
+
+.jb .jb1>img {
+    display: block;
+    width: 25%;
+}
+
+.jb1 {
+    margin-bottom: 10px;
+}
+
+/* ul2 */
+
+.jbul2 {
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+.jbul2>li {
+    float: left;
+    padding-right: 20px;
+}
+
+.yuanquan {}
+
+.yuanquan>img {
+    width: 166px;
+    height: 160px;
+    display: block;
+    border-radius: 50%;
+}
+
+.jbp1 {
+    font-size: 16px;
+    width: 50px;
+    border-bottom: 1px solid #fff;
+}
+
+.jbwz {
+    padding-top: 20px;
+}
+
+/* ditu */
+
+.bjdt {
+    margin-top: 100px;
+    border-bottom: 2px solid #fff;
+}
+
+.bjtt .bjtupic>img {
+    display: block;
+    width: 25%;
+    padding-bottom: 10px;
+}
+.bjtupic2 a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.bjtt .bjtupic2 img {
+    display: block;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+
+.bjzzs .zzs {
+    font-size: 60px;
+    font-weight: 700;
+    padding-top: 50px;
+}
+
+.bjzzs .zzsp {
+    font-size: 25px;
+    font-weight: 700;
+    padding-bottom: 60px;
+}
+
+.zzhb .zzhbp {
+    font-size: 16px;
+}
+
+.zzspic {
+    display: block;
+    padding-top: 40px;
+    width: 17%;
+}
+
+.fenghuihb {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.fenghui {
+    font-size: 16px;
+    padding-bottom: 40px;
+}
+
+.fengul {
+    width: 100%;
+}
+
+.fengul>li {
+    width: 20%;
+    padding-right: 10px;
+}
+
+.fhsb {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 196px;
+}
+
+/* shipin */
+
+.shipin {
+    position: relative;
+    height: 379px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.sppic{
+    position: absolute;
+    left: 25%;
+    top: 35%;
+    width: 100%;
+    height: 379px;
+    padding-bottom: 20px;
+    z-index: 0;
+}
+/* .sppic img{
+    width: 35%;
+    margin: 0 auto;
+
+} */
+.sph{
+    position: absolute;
+    left: 220px;
+    top: 110px;
+    font-size: 25px;
+}
+video {
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    /* height: 100%; */
+}

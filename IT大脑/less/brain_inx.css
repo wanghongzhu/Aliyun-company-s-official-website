@@ -1,0 +1,838 @@
+.brainwar {
+  width: 1290px;
+  padding: 0 auto;
+}
+.head-nav {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  /* 头部一级导航 */
+  /* 头部二级导航 */
+}
+.head-nav .head-nav-one {
+  width: 100%;
+  line-height: 50px;
+  box-sizing: border-box;
+}
+.head-nav .head-nav-one .headNavOne-left {
+  width: 30%;
+  height: 50px;
+  /* 左上角侧边栏 */
+}
+.head-nav .head-nav-one .headNavOne-left .img {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-right: 1px solid grey;
+}
+.head-nav .head-nav-one .headNavOne-left .img img {
+  width: 25px;
+  height: 20px;
+  display: inline-block;
+}
+.head-nav .head-nav-one .headNavOne-left .img:hover {
+  background: #00c1de;
+}
+.head-nav .head-nav-one .headNavOne-left .logo {
+  width: 120px;
+  height: 50px;
+  margin-left: 10px;
+  background: url('../images/logo.gif') no-repeat;
+  background-size: 100px 50px;
+}
+.head-nav .head-nav-one .headNavOne-left .logo img {
+  width: 100px;
+  height: 22px;
+}
+.head-nav .head-nav-one .headNavOne-right {
+  width: 60%;
+  padding-left: 50px;
+  box-sizing: border-box;
+}
+.head-nav .head-nav-one .headNavOne-right .headSearch {
+  height: 50px;
+  position: relative;
+}
+.head-nav .head-nav-one .headNavOne-right .headSearch input {
+  width: 200px;
+  height: 100%;
+  padding: 0 0 0 5px;
+  margin-right: 10px;
+  background: #4e4e4e;
+  opacity: .5;
+  box-sizing: border-box;
+}
+.head-nav .head-nav-one .headNavOne-right .headSearch input[placeholder="物联网"] {
+  color: #fff;
+}
+.head-nav .head-nav-one .headNavOne-right .headSearch #divs {
+  width: 0;
+  height: 0;
+  position: absolute;
+  right: 20px;
+  top: 0px;
+}
+.head-nav .head-nav-one .headNavOne-right .headSearch span {
+  position: absolute;
+  right: 20px;
+  top: 0px;
+}
+.head-nav .head-nav-one .headNavOne-right .China {
+  position: relative;
+}
+.head-nav .head-nav-one .headNavOne-right .China .language {
+  height: 50px;
+  line-height: 54px;
+  padding: 0 10px 0 12px;
+  cursor: pointer;
+}
+.head-nav .head-nav-one .headNavOne-right .car {
+  padding: 0 15px;
+  cursor: pointer;
+}
+.head-nav .head-nav-one .headNavOne-right .car i {
+  font-size: 20px;
+}
+.head-nav .head-nav-one .headNavOne-right ul {
+  height: 50px;
+  line-height: 57px;
+}
+.head-nav .head-nav-one .headNavOne-right ul li {
+  float: left;
+  padding: 0 15px;
+  cursor: pointer;
+}
+.head-nav .head-nav-two {
+  width: 100%;
+  line-height: 50px;
+  border-top: 1px solid #424446;
+  /*         border-bottom:  1px solid #424446; */
+  box-sizing: border-box;
+}
+.head-nav .head-nav-two ul {
+  width: 55%;
+  padding-left: 15px;
+}
+.head-nav .head-nav-two ul li {
+  float: left;
+  padding: 0 15px;
+  position: relative;
+}
+.head-nav .head-nav-two ul li a {
+  display: block;
+  color: #fff;
+}
+.head-nav .head-nav-two ul li a .triangle {
+  font-size: 16px;
+  position: absolute;
+  bottom: -18px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+.head-nav .head-nav-two ul li a:hover {
+  color: #00c1de;
+}
+.head-nav .head-nav-two ul li a:hover .triangle {
+  color: #fff;
+  display: block;
+}
+.head-nav .head-nav-two .register {
+  width: 120px;
+  height: 50px;
+  text-align: center;
+  background: #00c1de;
+}
+.brain_vi {
+  width: 100%;
+  height: 640px;
+}
+.brain_video {
+  position: relative;
+  width: 100%;
+  height: 640px;
+}
+.brain_banner {
+  position: absolute;
+  top: 0;
+  left: 300px;
+}
+.brain_banner .brain_banner_top {
+  height: 100px;
+}
+.brain_banner .brain_banner_middle {
+  text-align: center;
+  height: 432px;
+  padding: 310px 0 0 100px;
+  box-sizing: border-box;
+}
+.brain_banner .brain_banner_middle a {
+  display: inline-block;
+  width: 200px;
+  height: 42px;
+  line-height: 42px;
+  text-align: center;
+  background-color: #fff;
+  color: #000;
+  border-radius: 20px;
+  font-size: 14px;
+}
+.brain_banner .brain_banner_btm {
+  width: 100%;
+  height: 105px;
+  border-top: 1px solid #7d8cbc;
+}
+.brain_banner .brain_banner_btm li {
+  display: inline-block;
+  width: 318px;
+  height: 105px;
+  padding: 25px 0;
+  text-align: center;
+  box-sizing: border-box;
+}
+.brain_banner .brain_banner_btm li a {
+  width: 318px;
+  height: 55px;
+  display: block;
+  border-right: 1px solid #7d8cbc;
+}
+.brain_banner .brain_banner_btm li a h3 {
+  font-weight: 400;
+  font-size: 16px;
+  height: 28px;
+  color: #fff;
+}
+.brain_banner .brain_banner_btm li a p {
+  font-size: 12px;
+  color: #fff;
+}
+.brain_banner .brain_banner_btm li:nth-child(4) a {
+  border-right: none;
+}
+.brain_contert {
+  width: 100%;
+}
+.brain_contert .brain_contert_nav_top {
+  text-align: center;
+}
+.brain_contert .brain_contert_nav_top h2 {
+  font-weight: 400;
+  font-size: 24px;
+  height: 37px;
+  color: #000;
+  margin-top: 85px;
+}
+.brain_contert .brain_contert_nav_top p a {
+  font-size: 16px;
+  color: #666666;
+}
+.brain_contert .brain_contert_nav_top p a:hover {
+  color: #00c1de;
+}
+.brain_contert .brain_contert_nav {
+  height: 730px;
+  box-sizing: border-box;
+}
+.brain_contert .brain_contert_btmm {
+  padding-top: 100px;
+}
+/* 中间最大的内容 */
+.brain_contert_nav_btm {
+  position: relative;
+  width: 640px;
+  height: 640px;
+  margin: 50px auto;
+}
+.brain_contert_nav_btm .brain_contert_nav_img1 {
+  position: absolute;
+  width: 510px;
+  height: 510px;
+  top: 60px;
+  left: 63px;
+  transform-origin: center;
+  animation: dh 4s linear infinite;
+}
+.brain_contert_nav_btm .brain_contert_nav_img2 {
+  position: absolute;
+  top: 160px;
+  left: 200px;
+  width: 230px;
+  height: 280px;
+}
+.brain_contert_nav_btm .brain_contert_nav_img2 img {
+  width: 100%;
+  height: 100%;
+}
+.brain_contert_nav_btm .brain_contert_nav_img3 {
+  position: absolute;
+  width: 100%;
+  z-index: 5;
+}
+.brain_contert_nav_btm span {
+  position: absolute;
+  display: inline-block;
+  width: 200px;
+  height: 100px;
+  z-index: 6;
+}
+.brain_contert_nav_btm span a {
+  float: left;
+  display: block;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+}
+.brain_contert_nav_btm span .ET_capability_top {
+  padding-top: 30px;
+  box-sizing: border-box;
+}
+.brain_contert_nav_btm span .ET_capability_top h5 {
+  font-weight: 400;
+  color: #000;
+  font-size: 18px;
+  height: 25px;
+}
+.brain_contert_nav_btm span .ET_capability_top p {
+  font-size: 14px;
+  color: #999;
+}
+.brain_contert_nav_btm span:nth-child(2) {
+  top: 120px;
+  left: -170px;
+}
+.brain_contert_nav_btm span:nth-child(2) .ET_capability_btm {
+  background-image: url(../images/brain_img/ET_capability1.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.brain_contert_nav_btm span:nth-child(3) {
+  top: 120px;
+  right: -170px;
+}
+.brain_contert_nav_btm span:nth-child(3) .ET_capability_btm {
+  background-image: url(../images/brain_img/ET_capability2.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.brain_contert_nav_btm span:nth-child(4) {
+  bottom: 80px;
+  left: -70px;
+}
+.brain_contert_nav_btm span:nth-child(4) .ET_capability_btm {
+  background-image: url(../images/brain_img/ET_capability3.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.brain_contert_nav_btm span:nth-child(5) {
+  bottom: 90px;
+  right: -70px;
+}
+.brain_contert_nav_btm span:nth-child(5) .ET_capability_btm {
+  background-image: url(../images/brain_img/ET_capability4.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+@keyframes dh {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* <!-- 五块小盒子能力 --> */
+.brain_contert_mid_ability li {
+  margin-top: 35px;
+  float: left;
+  height: 190px;
+  width: 238px;
+  cursor: pointer;
+}
+.brain_contert_mid_ability li .topp {
+  width: 85px;
+  height: 90px;
+  margin: 30px auto;
+}
+.brain_contert_mid_ability li .btmm {
+  text-align: center;
+}
+.brain_contert_mid_ability li .btmm h3 {
+  font-weight: 900;
+  font-size: 16px;
+  height: 30px;
+  color: #000;
+}
+.brain_contert_mid_ability li:nth-child(1) .topp {
+  background: url(../images/brain_img/brain_contert_mid_ability1.png) center 0% no-repeat;
+}
+.brain_contert_mid_ability li:nth-child(2) .topp {
+  background: url(../images/brain_img/brain_contert_mid_ability2.png) center 0% no-repeat;
+}
+.brain_contert_mid_ability li:nth-child(3) .topp {
+  background: url(../images/brain_img/brain_contert_mid_ability3.png) center 0% no-repeat;
+}
+.brain_contert_mid_ability li:nth-child(4) .topp {
+  background: url(../images/brain_img/brain_contert_mid_ability4.png) center 0% no-repeat;
+}
+.brain_contert_mid_ability li:nth-child(5) .topp {
+  background: url(../images/brain_img/brain_contert_mid_ability5.png) center 0% no-repeat;
+}
+/*  <!-- 4块行业大脑 --> */
+.brain_contert_et {
+  padding-top: 45px;
+  padding-bottom: 80px;
+}
+.brain_contert_et li {
+  position: relative;
+  float: left;
+  width: 280px;
+  height: 410px;
+  margin-right: 20px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.brain_contert_et li .et_txt_jl {
+  width: 45px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url(../images/brain_img/btnn1.png);
+}
+.brain_contert_et li .brain_contert_et_txt {
+  position: absolute;
+  width: 160px;
+  height: 125px;
+  z-index: 5;
+  color: #fff;
+  top: 20px;
+  left: 20px;
+}
+.brain_contert_et li .brain_contert_et_txt h5 {
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+  height: 32px;
+}
+.brain_contert_et li .brain_contert_et_txt p {
+  font-size: 12px;
+  color: #fff;
+  height: 35px;
+}
+.brain_contert_et li .animgbig {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  transition: all 0.5s ease-in-out;
+}
+.brain_contert_et li .animgsml {
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  transition: all 0.5s ease-in-out;
+}
+.brain_contert_et li .animgsml:hover {
+  transform: scale(1.15);
+}
+.brain_contert_et li .animgbig:hover {
+  transform: scale(1.15);
+}
+.brain_contert_et li:nth-child(1) .animgsml {
+  top: 120px;
+  left: 10px;
+}
+.brain_contert_et li:nth-child(2) .animgsml {
+  top: 160px;
+  left: 0;
+}
+.brain_contert_et li:nth-child(3) .animgsml {
+  top: 155px;
+  left: 0;
+}
+.brain_contert_et li:nth-child(4) {
+  margin-right: 0;
+}
+.brain_contert_et li:nth-child(4) .animgsml {
+  top: 200px;
+  left: 0;
+}
+/* 小背景 */
+.brain_banner_saml {
+  width: 100%;
+  height: 560px;
+  background-image: url(../images/brain_img/brain_bannersmal.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+  padding-top: 86px;
+  box-sizing: border-box;
+}
+.brain_banner_saml h2 {
+  height: 68px;
+  font-weight: 400;
+  font-size: 30px;
+  color: #fff;
+}
+.brain_banner_saml p {
+  font-size: 22px;
+  color: #fff;
+}
+.brain_banner_saml .brain_banner_saml_btn {
+  width: 132px;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  background-color: #fff;
+  font-size: 16px;
+  color: #000;
+  border-radius: 20px;
+  margin: 50px auto;
+  cursor: pointer;
+}
+.brain_banner_saml .brain_banner_saml_img {
+  width: 857px;
+  height: 132px;
+  background-image: url(../images/brain_img/brain_checkj.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin: 0 auto;
+}
+/* 場景 */
+.brain_banner_scene {
+  width: 100%;
+  height: 670px;
+  background-color: #f5f5f5;
+  padding-top: 85px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.brain_banner_scene h2 {
+  font-size: 22px;
+  font-weight: 400;
+  height: 38px;
+  color: #000;
+}
+.brain_banner_scene .brain_bannerAL {
+  font-size: 14px;
+  color: #666;
+}
+/* 场景构造 */
+.scene_structure {
+  padding-top: 30px;
+}
+.scene_structure li {
+  float: left;
+  width: 390px;
+  height: 230px;
+  text-align: center;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+.scene_structure li .structure_img {
+  width: 85px;
+  height: 88px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.scene_structure li .structure_img:hover {
+  animation: smove 2s linear;
+}
+.scene_structure li h5 {
+  font-weight: 900;
+  font-size: 16px;
+  height: 33px;
+  color: #333;
+}
+.scene_structure li p {
+  font-size: 12px;
+  color: #666;
+  height: 26px;
+  cursor: pointer;
+}
+.scene_structure li p:hover {
+  color: #2cc7fe;
+}
+/* @keyframes smove {
+    from {
+        transform: translate(0px , 0px);
+    }
+    to {
+        transform: translate(0px , 0px);
+    }
+} */
+.mutual1 {
+  background: url(../images/brain_img/structure_img1.png) center 0% no-repeat;
+}
+.mutual2 {
+  background: url(../images/brain_img/structure_img2.png) center 0% no-repeat;
+}
+.mutual3 {
+  background: url(../images/brain_img/structure_img3.png) center 0% no-repeat;
+}
+.mutual4 {
+  background: url(../images/brain_img/structure_img4.png) center 0% no-repeat;
+}
+.mutual5 {
+  background: url(../images/brain_img/structure_img5.png) center 0% no-repeat;
+}
+.mutual6 {
+  background: url(../images/brain_img/structure_img6.png) center 0% no-repeat;
+}
+/* 展示三小块 */
+.brain_banner_show {
+  height: 470px;
+}
+.brain_banner_show ul {
+  padding-top: 80px;
+}
+.brain_banner_show ul li {
+  float: left;
+  width: 380px;
+  height: 30px;
+  box-sizing: border-box;
+  font-size: 12px;
+  color: #000;
+}
+.brain_banner_show ul .brain_show_img {
+  position: relative;
+  height: 240px;
+  background-color: skyblue;
+  margin-bottom: 25px;
+  overflow: hidden;
+}
+.brain_banner_show ul .brain_show_img img {
+  position: absolute;
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+  z-index: 3;
+  cursor: pointer;
+}
+.brain_banner_show ul .brain_show_img img:hover {
+  transform: scale(1.15);
+}
+.brain_banner_show ul li:nth-child(2) {
+  margin: 0 20px;
+}
+.brain_banner_show ul li:nth-child(5) {
+  margin: 0 20px;
+}
+.brain_banner_show ul li:nth-child(8) {
+  margin: 0 20px;
+}
+/*  class="forge_show" */
+/* 最底部 */
+.forge_show {
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: #373d41;
+  bottom: 0;
+  z-index: 66;
+  opacity: .4;
+  font-size: 14px;
+  color: #fff;
+}
+/* 网页底部 */
+footer {
+  width: 100%;
+  padding: 30px 0 20px 0;
+  background-color: #373d41;
+}
+footer .footers {
+  width: 100%;
+}
+footer .footers .footers-left {
+  width: 25%;
+  height: 280px;
+  color: #fff;
+  border-right: 1px solid #474c50;
+}
+footer .footers .footers-left .consult {
+  width: 30%;
+  font-size: 40px;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+footer .footers .footers-left ul {
+  width: 70%;
+}
+footer .footers .footers-left ul li {
+  padding: 5px 0;
+}
+footer .footers .footers-left ul li a {
+  color: #fff;
+}
+footer .footers .footers-left ul .lia a {
+  font-size: 14px;
+  color: #7d8083;
+}
+footer .footers .footers-right {
+  width: 70%;
+  padding-left: 120px;
+  box-sizing: border-box;
+  color: #fff;
+}
+footer .footers .footers-right dl {
+  width: 20%;
+  float: left;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+footer .footers .footers-right dt {
+  padding-bottom: 12px;
+}
+footer .footers .footers-right dt a {
+  color: #d7d8d9;
+}
+footer .footers .footers-right dd {
+  font-size: 12px;
+}
+footer .footers .footers-right dd a {
+  color: #9b9ea0;
+}
+footer .footers .footers-right dd img {
+  width: 80px;
+}
+footer .footers .footers-right dd:nth-child(odd) {
+  padding: 10px 0;
+}
+footer .related {
+  width: 100%;
+  margin-top: 20px;
+  padding: 20px 0;
+  border-top: 1px solid #474c50;
+  border-bottom: 1px solid #474c50;
+}
+footer .related .related-one {
+  width: 100%;
+}
+footer .related .related-one:nth-child(2) {
+  padding: 6px 0;
+}
+footer .related h4 {
+  width: 10%;
+  color: #9b9ea0;
+}
+footer .related ul {
+  width: 90%;
+}
+footer .related ul li {
+  width: 11%;
+  font-size: 12px;
+  float: left;
+  color: #73777a;
+}
+footer .policy {
+  width: 100%;
+  padding: 35px 0 55px 0;
+}
+footer .policy ul {
+  width: 100%;
+}
+footer .policy ul li {
+  float: left;
+  padding-right: 35px;
+  color: #73777a;
+  font-size: 16px;
+}
+footer .Youshang {
+  width: 100%;
+}
+footer .Youshang ul {
+  width: 100%;
+}
+footer .Youshang ul li {
+  float: left;
+  padding: 5px 15px 0 0;
+  color: #73777a;
+  font-size: 14px;
+}
+footer .copyright {
+  width: 100%;
+  padding: 20px 0;
+}
+footer .copyright img {
+  float: left;
+  width: 20px;
+}
+footer .copyright p:nth-child(1) {
+  padding-bottom: 6px;
+}
+footer .copyright p {
+  color: #73777a;
+}
+/* 中间四盒子旋转跳跃 */
+.brain_contert .w {
+  position: relative;
+}
+.brain_contert .spin_jump1 {
+  position: absolute;
+  top: 350px;
+  right: 270px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  z-index: -99999;
+  background-color: #b2f3fc;
+  box-shadow: 30px 30px 200px 200px #b2f3fc;
+  opacity: .7;
+  transform-origin: left  bottom;
+  animation: jup 3s linear infinite;
+}
+.brain_contert .spin_jump2 {
+  position: absolute;
+  top: 250px;
+  left: 250px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  z-index: -99999;
+  background-color: #bee0fe;
+  box-shadow: 30px 30px 100px 100px #bee0fe;
+  opacity: .7;
+  transform-origin: left  bottom;
+  animation: jup 3s linear infinite;
+}
+.brain_contert .spin_jump3 {
+  position: absolute;
+  top: 650px;
+  right: 240px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  z-index: -99999;
+  background-color: #ded7f4;
+  box-shadow: 30px 30px 150px 150px #ded7f4;
+  opacity: .7;
+  transform-origin: left  top;
+  animation: njup 3s linear infinite;
+}
+.brain_contert .spin_jump4 {
+  position: absolute;
+  bottom: 550px;
+  right: 600px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  z-index: -99999;
+  background-color: #8ed5f8;
+  box-shadow: 30px 30px 150px 150px #8ed5f8;
+  opacity: .7;
+  transform-origin: left  bottom;
+  animation: jup 3s linear infinite;
+}
+@keyframes jup {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes njup {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+/* 结束 */
